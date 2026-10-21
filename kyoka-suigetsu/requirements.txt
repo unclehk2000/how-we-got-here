@@ -1,0 +1,6 @@
+# tested with Python 3.13
+pandas>=3.0
+numpy>=2.0
+scipy>=1.14
+statsmodels>=0.14
+pynescript>=0.3   # tools/pine_check.py only
