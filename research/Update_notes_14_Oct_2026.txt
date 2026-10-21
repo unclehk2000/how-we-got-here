@@ -1,0 +1,326 @@
+UPDATE NOTES · 14 Oct 2026
+Paste each block into that script's "Release notes" box when you publish the update.
+
+────────────────────────────────────────────────────────────────────────
+DESGARRÓN (NFP, Model 6) · formerly Cero
+────────────────────────────────────────────────────────────────────────
+• Settings: a View section at the top (Pane, Clock measure, Theme, Layout, Card text), the same as the other indicators. Layout "Full" is now "Desktop".
+• Dealing range fixed: it never drew before. The pre-release range (07:00–08:29) now draws live from 07:00. When the release breaks it, the 07:00–09:00 dealing range takes over, following the high and low until 09:00, with a 50% line and an optional fill.
+• Model structure settings: on/off, colour, style and width for each range; how far the ranges run; the release window's end (default 09:00); label size; the ATH line style; the CE's end.
+• NFP flag: sits above the release push and is tied by a stem to the 08:30 open.
+• ATH and its CE: the all-time high is carried right of price. At 08:30 the CE between the ATH and the 08:29 close forms and runs to 17:00 or into the next session to 11:00. Touch odds within 0.5 ADR: 79% by 17:00, 83% by the next session's 11:00.
+• Stages card: led by the month's discount / middle / premium, and cut from 20 rows to 12.
+• Grimmjow, a new findings table in the indicator pane: what held for today's setup, in points at today's ADR20.
+• Data:
+  – the card and Grimmjow are now pooled across NQ, ES and RTY (99 releases, 293 symbol-days);
+  – RTY / M2K is supported, with its own clock and tally;
+  – stage 2 gained a held big-DXY rule (71%).
+• Fixes:
+  – the long tooltips are stored once instead of copied into every use, so the script sits well under Pine's size limit (it was close enough that any addition would have stopped it loading);
+  – the first dealing-range side now registers;
+  – the tally's week row no longer reads "−-58" in Bar Replay;
+  – the clock card's title.
+
+────────────────────────────────────────────────────────────────────────
+VIZARD (FOMC)
+────────────────────────────────────────────────────────────────────────
+• Settings: a View section at the top.
+  – Pane: Clock + Fed map, Event clock, Fed map or Cards only. It replaces the two on/off boxes.
+  – Also Clock measure, Theme, Layout (Desktop / Mobile) and Card text.
+  – Layout "Full" is now "Desktop". Card and map positions stay in their own sections.
+
+────────────────────────────────────────────────────────────────────────
+HOLLOW (NFP week, day after FOMC)
+────────────────────────────────────────────────────────────────────────
+• Settings: a View section at the top (Pane, Clock measure, Theme, Layout, Card text). Layout "Full" is now "Desktop".
+• Shirosaki, a new findings table in the indicator pane: what held for today's setup, in points at today's ADR20, with the gap rows and DXY pills live from 09:30. Pane: Clock + Shirosaki, Event clock, Shirosaki or Cards only.
+• Stages card: led by the month's discount / middle / premium, and cut from 19 rows to 12 (5 on Mobile).
+• Fix: the script loads again. It was over two of Pine's size limits: one if statement ("The if statement is too long") and the whole compiled script (137,244 tokens, limit 100,256). Pine copies a text held in a variable into every place it is used, so the long tooltips were counted up to ten times each. They are now stored once, and the cards are drawn in small blocks. Nothing on the chart changes.
+• Data:
+  – the card and Shirosaki are pooled across NQ, ES and RTY (329 NFP weeks, 67 days after FOMC);
+  – RTY / M2K is supported, with its own clock and tally;
+  – the open-side quarter of the gap is now tracked on NFP-week days too.
+• Model structure settings: on/off, colour and style for the NFP week's opening gap (now drawn to the release) and the FOMC high / low; the gap octants, settlement window, week open and RTH gap each on their own; label size.
+• NFP and FOMC flags: above the release bar, tied by a stem to the 08:30 or 14:00 open.
+• Fixes:
+  – the FOMC high / low lines use the FOMC day's whole session, the range the statistics were computed on (they drew the RTH high and low);
+  – the clock card's title read "Vizard";
+  – the clock's busiest half hour no longer counts the 18:00 open;
+  – a gap down read "+" in the GAP row.
+
+────────────────────────────────────────────────────────────────────────
+GRAN REY CERO (CPI)
+────────────────────────────────────────────────────────────────────────
+• Settings: a View section at the top (Pane, Clock measure, Theme, Layout, Card text). Layout "Full" is now "Desktop". The note about the cards stacking in one corner moved to the card-position setting.
+• Pre-CPI range 07:30–08:29: drawn live from 07:30, as in Desgarrón, and stopped where the release first takes a side (1st sweep). Colour and style are adjustable.
+• CPI dealing range 08:30–09:00: high, low and CE (50%), live through the window, then carried to 17:00 (or 11:00 / 16:14). The CE's label gives the odds RTH trades back to it after 09:00 (94% when within 0.1 ADR at 08:59). Pooled NQ + ES + RTY tests are in the tooltips.
+• NQ · ES · RTY vs week open: one readout under the release, at 08:30 and at the 09:30 open, with SPLIT and the weakest index (Genjutsu-style).
+• CPI flag: "CPI 08:30 · price" and your wording in a pill tied to the 08:30 open, instead of the floating text. The day after and other days get a quiet tag.
+• Fixes: the stage-1 range, the window box and the kept 08:30 candles never drew. A Pine v6 comparison with an empty value is always false, so their "new day" check never fired.
+• CPI dealing range ±0.25: dashed lines a quarter of the 08:30–09:00 range beyond its high and low, on by default. Their labels give how often RTH reached them on CPI days: +0.25 62%, −0.25 60% (normal days 83% each); once a side broke, it carried on to its +0.25 / −0.25 83% / 85% of the time.
+• Fix: the script loads again ("The main body of the script is too long"). The data tables are now read inside functions, which Pine counts separately from the main body. Nothing on the chart changes.
+
+────────────────────────────────────────────────────────────────────────
+SENBONZAKURA
+────────────────────────────────────────────────────────────────────────
+• Settings: the first section is now View.
+  – Pane: Senkei · Fed path, or Empty. It replaces the Senkei on/off box.
+  – Also Theme, Layout (Desktop / Mobile; "Full" is now "Desktop"), Text, and Kageyoshi on the price chart.
+
+────────────────────────────────────────────────────────────────────────
+GENJUTSU KAI
+────────────────────────────────────────────────────────────────────────
+• Settings: a View section at the top with Theme and Card text, the same as the other indicators. The card's on/off and position stay in Card.
+
+────────────────────────────────────────────────────────────────────────
+HUECO MUNDO (rebuilt: the four calendar models in one indicator)
+────────────────────────────────────────────────────────────────────────
+• Hueco Mundo now imports Desgarrón (NFP), Gran Rey Cero (CPI), Vizard (FOMC) and Hollow (NFP week, the day after FOMC). Each is a library, in the same way as NWOG / NDOG and OpenGaps, and each can be switched on or off.
+• Every module draws its own structure on its own days.
+• The cards and the indicator pane follow the module whose day is today or comes next. "Cards follow" in View can pin one module. TradingView keeps one table per corner, so the cards can't all show at once.
+• Settings:
+  – View, Modules, Event day, Cards, Event clock and Data are shared;
+  – each module then has its own section, as in its own indicator.
+• Replaces the old Hueco Mundo. Its PO3 candles are now Gran Rey Cero's.
+• Built from today's Desgarrón, Gran Rey Cero (with the CPI dealing range, pre-CPI range and NQ · ES · RTY readout), Vizard and Hollow, including their size fixes, so each library sits well under Pine's size limit.
+• Publish the four libraries first (HM_Desgarron, HM_GranRey, HM_Vizard, HM_Hollow), then Hueco Mundo.
+
+────────────────────────────────────────────────────────────────────────
+OPENGAPS (NWOG / NDOG)
+────────────────────────────────────────────────────────────────────────
+• Settings: a View section at the top with Show (all gaps, or the nearest above and below) and the labels and their size.
+
+────────────────────────────────────────────────────────────────────────
+DOMAIN EXPANSION · BYAKUGAN · KEKKAI · SHIKAI / BANKAI SESSION MAP
+────────────────────────────────────────────────────────────────────────
+• Settings:
+  – the Drawing section is now View, at the top: Theme, Text size, Text colour, label date format, days to keep and how older days fade;
+  – section names are plain, as in the newer indicators.
+• Theme: Auto follows the chart background. Text, and every colour that used to default to black, now reads on dark charts as well as light:
+  – Byakugan: the FVG's CE line;
+  – Shikai / Bankai: the session candles, session open lines and the stats table.
+  Picking any colour still overrides the theme.
+• The settings values no longer fill the status line next to the indicator's name.
+
+────────────────────────────────────────────────────────────────────────
+SŌGYO (Model 13 · CE1 / CE2)
+────────────────────────────────────────────────────────────────────────
+• New card in the house style: an accent stripe, a header pill with today's grade (GREEN, RED, SPLIT, NEUTRAL) and a tinted body. Rows: CE1, CE2, zone width, gap and overnight range in ATR, and the ATR with the red threshold. Every cell has a tooltip.
+• Settings:
+  – a View section at the top: Theme, Layout (Desktop / Mobile, a four-row card for a phone), Card text, Label text, Label colour and the date format;
+  – the card can sit in any of eight places and has its own accent colour.
+• Fix: the RTH ATR is now read from 15-minute bars. Before, it needed 14 full sessions of chart history, so on a 1-minute chart (and in Bar Replay) it often showed "— (loading ATR)" and the zone was never graded. The levels and the rules are unchanged.
+• Theme: Auto follows the chart, so the text reads on dark charts as well as light; a colour you pick still overrides it.
+• The settings values no longer fill the status line next to the indicator's name.
+
+────────────────────────────────────────────────────────────────────────
+BYAKUGAN (first presented FVG)
+────────────────────────────────────────────────────────────────────────
+• FVG length has a fourth choice, "To the present": every kept day's first presented FVG (and its CE and reflection) runs to the latest bar. The other three stop it at the Byakugan cut-off (11:00), at the session end (16:00), or at the trading day's last candle (16:59, formerly "To last candle"). Each is explained in the setting's tooltip.
+
+────────────────────────────────────────────────────────────────────────
+DESGARRÓN · GRAN REY CERO · VIZARD · HOLLOW
+────────────────────────────────────────────────────────────────────────
+DOMAIN EXPANSION (London, Model 1)
+────────────────────────────────────────────────────────────────────────
+• London card, 02:00 to 17:00 ET. Live from 02:30 it shows:
+  – the domain range and today's tier;
+  – the expected London range (02:00–04:59), its middle half, and how much of it is done;
+  – the furthest SD past the range so far;
+  – the live odds of 2 SD by 04:59;
+  – how often the London high and low were already in at this time, given price's distance from them.
+  After 05:00 it shows the result, the London range against ADR20, the follow-through close (07:00), and whether New York has taken the London high and low.
+• London high / low carried to 11:00 ET and marked when taken, or "not taken by 11:00". NY AM took the London high on 66% of sessions and the low on 62%; by 11:00, 75% and 71%.
+• Recent London sessions: a table of the last 10 (3–30): tier, result at 05:00, furthest SD and range.
+• Pre-London dealing range: the high, low and CE of 00:00–00:59 ET, drawn to 02:00 (London open) or, by setting, to 05:00. London took its high on 78% of sessions and its low on 73%; at least one 99.7%, both 52%. London traded through the CE on 75% of sessions, and on 64% when price sat outside the range at 02:00.
+• Alerts (one alert on "Any alert() function call"): domain range set with the tier, first break in the execution window, expansion line reached, the 05:00 result, and the London high or low taken before 11:00. Each can be switched off.
+• Removed: overnight equal highs / lows and the peak-volume level (not part of the model).
+• Cleaner chart:
+  – two text notes a day, on every timeframe: the tier at 02:30, and the 05:00 result with the follow-through (07:00) added to it;
+  – the first break is labelled at its candle, e.g. "▲ Break 02:33";
+  – the notes keep off each other: the tier note moves to the side away from the first break (beyond the pre-London range when its labels sit at 02:00), and the 05:00 note goes on the other side, beyond the London high or low and to the left of 05:00, clear of London's candles and the 05:00 line labels;
+  – labels that meet at the same time keep their text off each other's lines: at 05:00 the domain, SD and pre-London labels against each other and against the London high / low (e.g. when the London low is the domain low); at 02:00 the pre-London labels against the domain lines.
+• Colours:
+  – "Card theme" sets the cards, and their text always follows it;
+  – "Chart text colour" only colours the labels on the chart, and at its default follows the chart background. A dark card on a light chart with black chart text now reads properly;
+  – card headers use dark text on light tier colours.
+• Odds come from NQ + ES + RTY 1-minute 2018–26 (6,135 London sessions; 5,526 for the pre-London range), split by coiled days where it matters. They held steady in 2018–24 and 2025–26 and on each symbol, and are shown only at the default settings they were measured on. Expected range: fitted on 2018–24, checked on 2025–26 (48% inside the middle half, R² 0.87).
+
+────────────────────────────────────────────────────────────────────────
+BENIHIME · RTH GAPS (new)
+────────────────────────────────────────────────────────────────────────
+• Maps RTH gaps the way OpenGaps maps NWOGs. RTH gap = the overnight move from the prior 16:14 close (the RTH close, 16:15 ET) to the 09:30 ET open. Every gap runs right in price.
+• Keep the last 5–60 sessions (default 20).
+• The gaps are read from 15-minute bars of the chart's own symbol (the 16:00 bar's close, the 09:30 bar's open), so they are exact on ETH and RTH charts alike. The first build read daily bars, but TradingView's daily futures bars ignore the RTH session, and that measured the 17:00 → 18:00 gap instead; that is fixed.
+• Tiers:
+  – staircase, the last 5 sessions (rolling): octants plus ±1 SD (dashed) and ±2 SD (solid), gap-size multiples above the top and below the bottom, shaded. Each ±2 SD line carries its gap's weekday (e.g. "Tue +2 SD", "Wed CPI −2 SD"). Release days keep their staircase while they stay on the chart;
+  – up to N sessions old (default 10): quarters;
+  – older: edges + CE.
+  Filled gaps fade. Labels show the date, the release tag and "CE" / "filled"; labels whose CEs sit close together share one.
+• Release regime:
+  – CPI and NFP (major, orange);
+  – PPI, GDP, PCE and retail sales (other, purple);
+  – your own dates.
+  Actual release dates from the BLS, BEA and Census archives and ALFRED. CPI, NFP and PPI are loaded to Dec 2027; GDP, PCE and retail sales to Dec 2026.
+• Card (average RTH gap tracker):
+  – live in RTH: today's gap in points and %, and against the 20-session average; the average over N sessions, with how many are loaded; CE and fill with times, or the live odds by 16:14; ±1 SD odds; the odds over the staircase life (5 sessions); the nearest open gap above and below price;
+  – outside RTH: the 16:14 close, "if it opened now", the coming session's releases, and the last gap's result.
+• Research, NQ + ES + RTY 1-minute 2018–26, 6,169 gaps:
+  – in RTH, 78% reach the CE and 62% fill; within 5 sessions 91% / 84%; within 20 sessions 96% / 92%;
+  – size against the 20-session average decides it. RTH fill rate: under 0.5× 88%, 0.5–1× 64%, 1–1.5× 49%, 1.5–2.5× 38%, 2.5×+ 22%. Steady in both periods and on each symbol;
+  – CPI and NFP gaps run 1.4–1.5× the size of normal-day gaps (p < 0.001);
+  – PPI, GDP, PCE and retail sales move price at 08:30 (1.8–3.6× a normal 08:30–08:34 range), but their gaps were not reliably bigger;
+  – for its size, no release-day gap behaved differently;
+  – a gap still unfilled after 5 sessions filled within the next 15 sessions 49% of the time.
+
+────────────────────────────────────────────────────────────────────────
+SHIKAI / BANKAI SESSION MAP (card overhaul)
+────────────────────────────────────────────────────────────────────────
+• New card in the house style. It replaces the 25-row stats table:
+  – header: mode, date and time, and a pill: FORMING before 09:30, LONG / SHORT (the side into the midpoint), ✓ MID once reached, OVER when the window ends without it;
+  – MID: the overnight midpoint, ▲ / ▼, and its distance from the 09:30 open in ADR20 and points;
+  – SIDE: discount (LONG into the mid) or premium (SHORT into the mid), and whether the tested pull applies;
+  – REACH: the live odds of reaching the midpoint by 16:59 (Shikai) or 11:00 (Bankai), given it hasn't been reached yet, against its mirror; then the time it was reached;
+  – MIRROR: the same distance from the open on the other side, now also drawn on the chart (dotted);
+  – WINDOW (Bankai): primary or secondary window open, or entries closed, and the minutes to the hard stop;
+  – LONDON: the London high and low taken after 05:00, with times, and live odds for the ones not yet taken;
+  – LDN 25%: London's 25% level, traded or untouched;
+  – RANGES: the Asia, London and NY ranges against a typical day's;
+  – REGIME: London against Asia, as context.
+  Before 09:30 it shows the overnight range so far and the odds if the session opened at the current price.
+• Settings: the View section now has Card theme, Layout (Desktop / Mobile), the card's on/off and position (eight places), Card text, Chart text size and Chart text colour.
+  – Mobile shows four rows in the narrower default font; the rest stays in the tooltips.
+  – The card defaults to bottom left, clear of the session candles.
+• Colours: "Card theme" sets the card and its text. "Chart text colour" only colours the chart labels, and at its default follows the chart background.
+• Chart labels within 2.5% of ADR20 of each other now share one stacked label instead of printing over each other.
+• Odds come from NQ + ES + RTY 1-minute 2018–26 (6,344 days). They held in 2018–24 and 2025–26 and on each symbol:
+  – overall, the midpoint is reached about as often as the mirror (by 16:59, 76.5% vs 75.6%);
+  – on discount opens 0.1 ADR or more from the mid, the midpoint is reached 5–6 points more often than an equal level above the open (by 11:00 53% vs 47%, p 0.002; by 16:59 69% vs 64%, p 0.01);
+  – premium opens show no pull;
+  – the London high is taken by 11:00 on 75% of days and by 16:59 on 83%; the low on 71% / 79%; both on 48% / 62%.
+• Removed:
+  – the stats table's chart-history counts (a few days on the chart, e.g. "66.7% of 6");
+  – the prior-day state, which did not beat the mirror.
+• Unchanged: the session candles, the midpoint map, the hot-block midpoints, the Bankai windows and the markers.
+
+────────────────────────────────────────────────────────────────────────
+BAKUDŌ 58 · MACRO LINK (new)
+────────────────────────────────────────────────────────────────────────
+• A card that shows which macro force the index is moving with, and how hard: the dollar (DXY) and oil (CL).
+• Three regimes, worked out from yesterday's closes:
+  – WEAK $: DXY below its 200-day average. The index follows oil; 1% CL ≈ +0.16–0.22%.
+  – STRONG $: DXY above its 200-day average. The dollar leads; 1% DXY ≈ −0.75 to −0.95%. Oil barely matters.
+  – OIL SHOCK: CL's front month is 15%+ a year above the second month, and CL is up 10%+ in 20 days. Both turn against the index: 1% DXY ≈ −1.05 to −1.50%, 1% CL ≈ −0.10 to −0.13%. Together they explain about 30% of the day's move, against 6–13% otherwise.
+• Rows:
+  – WATCH: what to watch in this regime, and the index points per 1%.
+  – DXY and OIL: each one's move today and the index move that goes with it.
+  – TODAY: the index's move and how much of it the dollar and oil account for.
+  – LIVE β: the last 60 days' sensitivity against the tested values.
+  – SHOCK: the distance to the oil-shock rule.
+  – CARRY: the index carry (next contract over front, annualised) and how many points a day the front month gives up to cash.
+  Mobile shows four rows.
+• An alert fires when the regime changes.
+• Memory: the daily histories behind LIVE β are handed over on the last bar only, and each request reads just the last ~100 daily bars. Before, a copy was stored for every bar, which ran out of memory on 1-minute charts ("Memory limits exceeded"). LIVE β can be switched off.
+• Research: NQ, ES and RTY daily data 2018–26, with DXY 5-minute (2023–26) and CL 1-minute (FOMC weeks). Each regime effect held pooled (p < 0.05, errors clustered by date), in 2018–24 and 2025–26, and on every symbol.
+• What did not hold:
+  – neither DXY nor CL led the index: not over the next minutes, the rest of the day, the next session or the next week;
+  – a gap between the index and what the dollar implies did not close by 16:00;
+  – no reliable quarter or month effect in either link;
+  – the index carry did not lead the next week's return, range, close in the premium of the prior week, or a take of its high or low.
+  So the card is context, not a signal.
+
+────────────────────────────────────────────────────────────────────────
+SHIKAI / BANKAI SESSION MAP (session levels fix)
+────────────────────────────────────────────────────────────────────────
+• Fix: the Asia and London 25% and 50% levels no longer move while the session trades inside its range.
+  – They are now retracement levels of the session's high–low, measured from whichever extreme came last. A session that made its high first and its low later is measured up from the low.
+  – They change only when the session makes a new high or low.
+  – Before, they were a share of the open–close body, so they moved with every tick until the session closed.
+  – The old method is still available: "25 / 37.5 / 50% of" → Body (open–close).
+• New: a 37.5% level (dashed), on by default, with its own toggle and colour. It applies to the lines on the chart and the ticks on the session candles.
+• The card's LDN 25% row uses the same definition and shows the leg (up or down).
+  – NQ + ES + RTY 2018–26, after 05:00: London's 25% was reached by 11:00 on 91% of days and by 16:59 on 94%.
+  – The 37.5% on 90% / 93%, and the 50% on 86% / 90%.
+  – Asia's levels (from 00:00) were reached at about the same rates.
+  – Steady in both periods and on every symbol.
+
+────────────────────────────────────────────────────────────────────────
+BAKUDŌ 58 · FRACTAL MODEL (added, 16 Oct 2026)
+────────────────────────────────────────────────────────────────────────
+• The C2 → C3 fractal model now runs inside Bakudō 58, on the chart and on the card. It is written from the model's description; no code was taken from the two shared scripts.
+• Pairs:
+  – 1m chart with 15-minute candles;
+  – 1H chart with daily candles (CME day, 18:00–17:00 ET).
+  "Auto" uses 15-minute candles on charts of 5 minutes or less, and daily candles on longer intraday charts. Other chart timeframes still run, but the card marks the odds "untested".
+• On the chart:
+  – the C2 label and the sweep of C1's low or high. When C2's extreme breaks, the label becomes XC2 and the setup keeps only its label, the sweep and a grey CISD line.
+  – C2's midpoint (EQ) and the T-spot (C3's open to EQ) during C3.
+  – the CISD line, labelled "CISD · in C2" when it confirmed inside C2. An early CISD shows as a dashed line while the candle is still forming.
+  – projections +1, +2, +2.5, +4 and +4.5 with their odds, ticked ✓ when hit.
+  – the protected swing (●), greyed if it is taken before C4 ends.
+  – a preview of the last 4 higher-timeframe candles right of price (offset 12 bars), tagged C1–C4, with a countdown to the close.
+• Card: View → "Card shows" Both / Fractal / Macro.
+  – Fractal rows: C2, C3, C2 LOW (or HIGH), CISD, TARGETS, PROTECT.
+  – Both shows FRACTAL and MACRO sections.
+  – Fractal only gives a neutral header with the pair, since the regime made no difference to these odds.
+  – Mobile shows C2, C3 and CISD, plus WATCH (Both) or PROTECT (Fractal).
+• Alerts: C2, CISD and protected swing (on "Any alert() function call").
+• Memory: no requested arrays. The module keeps at most 10 higher-timeframe candles and the kept setups (default 2). History look-backs are capped at 300 bars. Drawing limits are raised to 500 lines and labels and 100 boxes.
+• Research: NQ, ES and RTY 1-minute data 2018–26 (1m–15m: 248k C2s; 1H–1D: 3,089). Each result held pooled (p < 0.05, errors clustered by date), in 2018–24 and 2025–26, and on every symbol.
+  Figures are 15m / 1D:
+  – Where C2 closes in its own range decides C3. By close-location quarter, C3 took C2's high (bull; mirrored for bear):
+      15m: 21 / 36 / 55 / 78%
+      1D: 20 / 39 / 58 / 83%
+  – Against other candles that closed in the same place, a C2 is not followed by more expansion (−1.6 / −3.2 points). The pattern adds nothing beyond where it closes.
+  – C2's swept extreme held through C3 slightly more often than other candles' at the same close location: +1.7 / +3.4 points, and +2.8 / +7.4 when the CISD confirmed inside C2.
+  – Once C3 trades back to C2's EQ, the odds that it still takes C2's high fall to 21 / 35 / 47 / 64% (15m).
+  – Projections reached before C4 ended:
+      +1: 72 / 80%
+      +2: 46 / 57%
+      +2.5: 36 / 49%
+      +4: 20 / 32%
+      +4.5: 16 / 28%
+  – Protected swings (1m–15m only) held to the end of C4 9.5 points more often than other 1-minute swings with the same bars left and distance. 49% held overall. By bars left in C4 when marked:
+      ≤5: 93%
+      6–10: 77%
+      11–15: 64%
+      16–20: 52%
+      21+: 39%
+    A CISD inside C2 added 4.8 points.
+• What did not hold:
+  – once close location is accounted for, an early CISD does not raise the odds that C3 takes C2's other extreme;
+  – the dollar / oil regime made no difference to any of the fractal odds;
+  – protected swings on 1H–1D were not tested, so the card shows "untested".
+
+────────────────────────────────────────────────────────────────────────
+HADŌ 99 (renamed from Bakudō 58) · two cards, macro made actionable (16 Oct 2026)
+────────────────────────────────────────────────────────────────────────
+• Name: Hadō 99 · Macro Link + Fractal. The alerts, headers and file name follow it (Hado_99.pine).
+• Two cards instead of one, each with its own switch and position under View:
+  – Macro card (top right by default);
+  – Fractal card (bottom right by default).
+  "Card shows" is gone. Mobile folds each card to four rows:
+  – Macro: WATCH, RANGE, DXY, OIL;
+  – Fractal: C2, C3, CISD, PROTECT.
+• Fractal card header:
+  – it takes the colour of a live setup (blue bull, red bear), and is grey when there is none;
+  – the pill shows the pair (15m / 1D, "untested" on other chart timeframes).
+• New RANGE row (macro card): the range to expect today, for sizing targets and stops, and how much is used so far.
+  – Expected range = ADR20 × the average range / ADR20 that followed a day like yesterday.
+  – This depends on yesterday's own range (< 1, 1–1.5, ≥ 1.5× ADR20) and on whether DXY or CL moved 2+ daily standard deviations.
+  – Range / ADR20 by yesterday's own range:
+      normal day: 0.92 / 1.06 / 1.33×
+      after a 2+ sd DXY or CL day (1 day in 10): 1.07 / 1.16 / 1.51×
+  – NQ + ES + RTY 2018–26 (6,500 days). A big dollar or oil day adds 0.10–0.19× ADR20 beyond the index's own recent range (p < 0.01; held in 2018–24 and 2025–26 and on each symbol).
+  – Uses data the card already loads: no extra request.
+• New DXY row (fractal card, 15m pair): DXY across the C2 candle, and whether it moved the setup's way.
+  – NQ + ES + RTY 2023–26, 93k C2s. When DXY moved the setup's way by more than 0.5 sd (1 C2 in 4), at the same close location:
+      C2's extreme held through C3 1.7 points more often
+      C3 took C2's other extreme 1.3 points more often
+    Both p < 0.01, in both periods and on each symbol; the take effect was weaker in 2025–26.
+  – DXY moving against the setup changed nothing.
+  – A small edge on top of the close-location odds, not a signal by itself.
+• Tested and not added:
+  – the regime itself does not change the day's range;
+  – DXY's overnight move adds nothing to the New York session range once the index's own overnight range is known;
+  – on daily candles, neither DXY nor CL moving with the C2 changed its odds.
