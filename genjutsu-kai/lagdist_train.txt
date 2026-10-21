@@ -1,0 +1,14 @@
+
+30m: 6.86 SMTs/day · lag (final) percentiles %: P10=0.013 P25=0.029 P50=0.061 P75=0.114 P90=0.190
+   lag ≥ 0.00%: 6.86/day · held share 52%
+   lag ≥ 0.02%: 5.72/day · held share 57%
+   lag ≥ 0.03%: 5.10/day · held share 59%
+   lag ≥ 0.05%: 4.00/day · held share 62%
+   lag ≥ 0.10%: 2.02/day · held share 64%
+
+OR: 1.01 SMTs/day · lag (final) percentiles %: P10=0.023 P25=0.060 P50=0.137 P75=0.267 P90=0.398
+   lag ≥ 0.00%: 1.01/day · held share 25%
+   lag ≥ 0.02%: 0.92/day · held share 27%
+   lag ≥ 0.03%: 0.89/day · held share 28%
+   lag ≥ 0.05%: 0.80/day · held share 29%
+   lag ≥ 0.10%: 0.61/day · held share 34%

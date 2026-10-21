@@ -1,0 +1,19 @@
+paired days 2046 (2018–2026)
+
+high side (bearish SMT): no break 16% · both took it together 30% · SMT 54% of days
+low side (bullish SMT): no break 16% · both took it together 26% · SMT 57% of days
+
+SMTs: 2278 (1.11 per day) · NQ took 68% / ES took 32% · median time 09:31
+outcome by 11:00: Kai 75% · Synced 25% · no outcome 0%
+   2018–24: Kai 74% · Synced 25% · none 0%  (n=1927)
+   2025–26: Kai 77% · Synced 23% · none 0%  (n=351)
+
+NQ closes back through the level it took, by 11:00 · NQ took it and ES did not (SMT): 93% (n=1546) · both took it together (control): 88% (n=1153)
+
+Theoretical execution at Kai (n=1704), outcome by 16:00, target before invalidation:
+   NQ → C.E.: valid 62% of Kais · hit 52% · median R 0.74 · average result -0.08R per trade
+   NQ → opposite: valid 84% of Kais · hit 44% · median R 1.45 · average result +0.01R per trade
+   NQ median risk 15.75 pts
+   ES → C.E.: valid 51% of Kais · hit 52% · median R 0.75 · average result -0.06R per trade
+   ES → opposite: valid 80% of Kais · hit 46% · median R 1.33 · average result -0.02R per trade
+   ES median risk 3.75 pts

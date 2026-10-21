@@ -1,0 +1,4 @@
+ML 0.00 30m: 6.29/day  held 51%  synced 49%
+ML 0.00 OR: 0.77/day  held 23%  synced 77%
+ML 0.02 30m: 5.45/day  held 52%  synced 48%
+ML 0.02 OR: 0.77/day  held 23%  synced 77%
