@@ -1,0 +1,48 @@
+
+=== checkpoint end of 03:00 ET hour   (n=1985)
+  wk  share A/N/B [39. 20. 40.]  | final range ÷ range so far, median: A 1.96 N 2.43 B 3.10
+  all share A/N/B [38. 21. 41.]  | final range ÷ range so far, median: A 1.95 N 2.41 B 3.09
+  2018-24: Spearman(so-far ÷ baseline median, growth still to come)  same-weekday -0.455  all-days -0.468
+  2025-26: Spearman(so-far ÷ baseline median, growth still to come)  same-weekday -0.391  all-days -0.411
+  net status (same weekday) -> rest-of-day net: Above +0.079% up 54% (n 792) | Neutral +0.065% up 57% (n 423) | Below +0.005% up 53% (n 770)
+
+=== checkpoint end of 09:00 ET hour   (n=1985)
+  wk  share A/N/B [40. 21. 39.]  | final range ÷ range so far, median: A 1.33 N 1.40 B 1.59
+  all share A/N/B [38. 21. 41.]  | final range ÷ range so far, median: A 1.30 N 1.39 B 1.59
+  2018-24: Spearman(so-far ÷ baseline median, growth still to come)  same-weekday -0.259  all-days -0.293
+  2025-26: Spearman(so-far ÷ baseline median, growth still to come)  same-weekday -0.208  all-days -0.226
+  net status (same weekday) -> rest-of-day net: Above +0.074% up 58% (n 764) | Neutral +0.037% up 52% (n 447) | Below -0.022% up 53% (n 774)
+
+=== checkpoint end of 10:00 ET hour   (n=1985)
+  wk  share A/N/B [39. 23. 38.]  | final range ÷ range so far, median: A 1.18 N 1.17 B 1.31
+  all share A/N/B [39. 20. 41.]  | final range ÷ range so far, median: A 1.17 N 1.17 B 1.31
+  2018-24: Spearman(so-far ÷ baseline median, growth still to come)  same-weekday -0.166  all-days -0.213
+  2025-26: Spearman(so-far ÷ baseline median, growth still to come)  same-weekday -0.119  all-days -0.166
+  net status (same weekday) -> rest-of-day net: Above +0.064% up 60% (n 780) | Neutral +0.102% up 58% (n 433) | Below -0.021% up 52% (n 772)
+
+=== checkpoint end of 12:00 ET hour   (n=1933)
+  wk  share A/N/B [40. 22. 38.]  | final range ÷ range so far, median: A 1.07 N 1.05 B 1.10
+  all share A/N/B [39. 21. 39.]  | final range ÷ range so far, median: A 1.06 N 1.05 B 1.10
+  2018-24: Spearman(so-far ÷ baseline median, growth still to come)  same-weekday -0.083  all-days -0.133
+  2025-26: Spearman(so-far ÷ baseline median, growth still to come)  same-weekday -0.070  all-days -0.104
+  net status (same weekday) -> rest-of-day net: Above +0.069% up 60% (n 741) | Neutral +0.049% up 56% (n 446) | Below -0.038% up 52% (n 746)
+
+=== checkpoint end of 14:00 ET hour   (n=1920)
+  wk  share A/N/B [39. 23. 38.]  | final range ÷ range so far, median: A 1.00 N 1.00 B 1.00
+  all share A/N/B [39. 22. 39.]  | final range ÷ range so far, median: A 1.00 N 1.00 B 1.00
+  2018-24: Spearman(so-far ÷ baseline median, growth still to come)  same-weekday -0.003  all-days -0.037
+  2025-26: Spearman(so-far ÷ baseline median, growth still to come)  same-weekday +0.059  all-days +0.021
+  net status (same weekday) -> rest-of-day net: Above +0.052% up 56% (n 757) | Neutral -0.013% up 49% (n 424) | Below -0.036% up 47% (n 739)
+
+=== Monday direction
+  2018-24: Mon mean +0.197% up 61% vs other days +0.069% up 54% | Welch t +1.52 p 0.128 | Sharpe always-long (session only) 1.03 vs Monday-only 1.01
+  2025-26: Mon mean +0.448% up 64% vs other days +0.011% up 50% | Welch t +2.70 p 0.008 | Sharpe always-long (session only) 1.11 vs Monday-only 2.44
+   2018: Mon -0.13% up 54%  | others +0.04% up 54%
+   2019: Mon -0.01% up 58%  | others +0.19% up 60%
+   2020: Mon +0.96% up 78%  | others +0.13% up 57%
+   2021: Mon +0.10% up 60%  | others +0.08% up 56%
+   2022: Mon -0.02% up 50%  | others -0.14% up 44%
+   2023: Mon +0.30% up 65%  | others +0.13% up 53%
+   2024: Mon +0.19% up 62%  | others +0.04% up 55%
+   2025: Mon +0.36% up 62%  | others -0.02% up 51%
+   2026: Mon +0.59% up 68%  | others +0.05% up 50%
