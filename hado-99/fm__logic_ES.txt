@@ -1,0 +1,4 @@
+ES                 n   held       h
+kind                            
+protected   60953  0.442  35.747
+swing      329403  0.324  21.402

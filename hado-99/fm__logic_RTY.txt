@@ -1,0 +1,4 @@
+RTY                 n   held       h
+kind                            
+protected   67222  0.408  35.736
+swing      246497  0.310  20.672

@@ -1,0 +1,4 @@
+NQ                 n   held       h
+kind                            
+protected   71900  0.391  37.281
+swing      218579  0.305  21.390
