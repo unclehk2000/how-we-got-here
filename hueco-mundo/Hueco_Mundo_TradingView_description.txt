@@ -1,0 +1,86 @@
+PUBLISHING ORDER
+1. Publish the four libraries, from their .pine files: HM_Desgarron, HM_GranRey, HM_Vizard, HM_Hollow.
+   – Pine Editor → open the file → "Publish script" → "Library". Use the library text below.
+   – TradingView rule: a PUBLIC script can only import PUBLIC libraries. Publish the libraries public if Hueco Mundo
+     will be public. Private libraries only work for a private or personal Hueco Mundo.
+2. Publish Hueco Mundo itself. Its imports expect version 1 of each library ("…/HM_Hollow/1"). After you update a
+   library, raise its number in the four import lines at the top.
+3. Changes to a module go into its own indicator (Desgarron.pine, Gran_Rey_Cero.pine, Vizard.pine, Hollow.pine). Its
+   library is regenerated from it and republished as the next version.
+
+
+LIBRARY TEXT (one per library; swap in the module's name)
+────────────────────────────────────────────────────────────────────────
+TITLE: HM_Hollow
+DESCRIPTION:
+The engine of the Hollow indicator (NFP week and the day after FOMC) as a library, so that Hueco Mundo can run it next
+to the other economic-calendar models.
+• Cfg: the settings. State: everything the module keeps from bar to bar. Feed: the higher-timeframe and DXY / VIX data,
+  requested once by the importing script.
+• Call step1 … stepN in order on every bar, holding Cfg, State and Feed with var. Set Cfg.on to true for the module
+  whose cards should draw.
+• nextDay() returns the day the module's cards read: today when it is one of its days, otherwise the next.
+Open source under MPL 2.0. Concepts: ICT (Michael J. Huddleston).
+
+
+HUECO MUNDO
+────────────────────────────────────────────────────────────────────────
+TITLE: Hueco Mundo: Economic-Calendar Models (NFP, CPI, FOMC) for NQ, ES & RTY
+
+DESCRIPTION:
+
+[b]Hueco Mundo[/b] puts my four economic-calendar indicators into one script. Each is imported as a library, the way NWOG / NDOG imports OpenGaps:
+• [b]Desgarrón[/b]: NFP day (Model 6);
+• [b]Gran Rey Cero[/b]: CPI day and the day after (Models 7–8), with the PO3 candles and the VIX / DXY cards;
+• [b]Vizard[/b]: FOMC day and day 1 (Models 9–10), with the Fed card and Fed map;
+• [b]Hollow[/b]: NFP week and the day after FOMC (Models 11–12), with Shirosaki.
+Each module is the same code as its own indicator, so the figures, rows and tooltips match. Each can be switched off.
+
+
+[b]█ HOW IT SHOWS FOUR MODULES[/b]
+
+TradingView allows one table per corner, so the cards can't all show at once.
+• [b]Structure on price[/b] (dealing ranges, ATH CE, the FOMC high / low, gap octants, release windows and flags): every module draws its own, on its own days.
+• [b]Cards and indicator pane[/b] (tally, stages card, clock card, event clock and the findings table): these follow one module. By default it is the module whose day is today, or else comes next. On a tie, Desgarrón comes first, then Gran Rey Cero, Vizard and Hollow.
+• [i]Cards follow[/i] in View pins one module instead.
+
+October to November 2026, for example:
+• CPI on 14 Oct: Gran Rey Cero;
+• 15–28 Oct: Vizard, counting down to FOMC day 1 (27 Oct) and the decision (28 Oct);
+• 29 Oct: Hollow, the day after FOMC;
+• 2–5 Nov: Hollow, NFP week;
+• 6 Nov: Desgarrón, NFP;
+• 10 Nov: Gran Rey Cero, CPI.
+
+
+[b]█ SETTINGS[/b]
+
+• [b]View:[/b]
+  – Pane: clock + findings, the clock, the findings table, or cards only;
+  – Cards follow;
+  – Clock measure, Theme (Auto follows the chart), Layout (Desktop or Mobile) and Card text.
+• [b]Modules:[/b] on or off. An off module draws nothing and stops running.
+• [b]Event day, Cards, Event clock and Data[/b] are shared by every module: the tally, stages card, clock card and findings table positions; the DXY, VIX, 10-year and fed funds symbols.
+• [b]One section per module[/b] follows, holding its model-structure, PO3, Fed and findings settings, as in its own indicator.
+
+Two defaults differ from the single indicators, so nothing is drawn twice:
+• Gran Rey Cero shades its 08:30–09:00 window on CPI days and the day after;
+• Hollow leaves the NFP flag to Desgarrón.
+
+
+[b]█ HOW TO USE[/b]
+
+• Built for [b]NQ / MNQ[/b], [b]ES / MES[/b] and [b]RTY / M2K[/b], on 1 to 15-minute charts. The live stage rows need 30 minutes or less, and the clock 60 minutes or less.
+• Make the indicator pane tall enough for the findings table.
+• Each module's own description has its data, method and ✓ rule: Desgarrón, Gran Rey Cero, Vizard and Hollow. The figures are pooled across NQ, ES and RTY where those descriptions say so.
+• Hueco Mundo runs all four modules on every bar, so it loads slower than one indicator. Switch off what you don't use.
+
+
+[b]█ LIMITATIONS[/b]
+
+[i]Historical frequencies, not guarantees.[/i] Without a CBOT data subscription, TradingView delays the fed funds contracts behind Vizard's Fed card and map. In Bar Replay, TradingView may not feed TVC:DXY minute by minute. Nothing here is financial advice.
+
+
+[b]█ CREDITS[/b]
+
+ICT concepts ([i]Michael J. Huddleston[/i]). Event clock after Kyōka Suigetsu. Written from scratch; open source under MPL 2.0.
