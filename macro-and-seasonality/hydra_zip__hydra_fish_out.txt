@@ -1,0 +1,116 @@
+====================================================================================================
+A. BASELINES  (race: does NQ move 1σ30 in the SMT direction before 1σ30 against, by 16:14; σ30 = last-60-min 1-min σ × √30)
+
+2018–24: 1685 days · SMTs 19262 (11.4/day) · controls (sister confirmed) 21239 · random bars 6740
+   SMT, fade the leader       race won  49.5% [48.7–50.2]  · mean 30-min move -0.000σ (t -0.03)
+   control, fade the sweep    race won  50.1% [49.5–50.8]  · mean 30-min move -0.006σ (t -0.45)
+   always long, same bars     race won  51.2%  · random bars always long 51.9%  (30-min +0.005σ)
+   SMT minus control on race: t -1.06 (p 0.288)
+     30m high ▼  n  5503  SMT race  48.4%  control  49.4%  · held   51% of SMTs
+     30m low ▲   n  4809  SMT race  51.0%  control  51.5%  · held   53% of SMTs
+     60m high ▼  n  3593  SMT race  48.1%  control  49.7%  · held   42% of SMTs
+     60m low ▲   n  3035  SMT race  50.4%  control  49.7%  · held   44% of SMTs
+     OR  high ▼  n   892  SMT race  49.7%  control  46.3%  · held   24% of SMTs
+     OR  low ▲   n   802  SMT race  49.6%  control  51.4%  · held   28% of SMTs
+
+2025–26: 359 days · SMTs 3754 (10.5/day) · controls (sister confirmed) 4745 · random bars 1436
+   SMT, fade the leader       race won  49.9% [48.2–51.5]  · mean 30-min move -0.023σ (t -1.01)
+   control, fade the sweep    race won  51.6% [50.1–53.0]  · mean 30-min move +0.025σ (t +0.97)
+   always long, same bars     race won  50.2%  · random bars always long 49.7%  (30-min +0.015σ)
+   SMT minus control on race: t -1.29 (p 0.196)
+     30m high ▼  n  1053  SMT race  50.1%  control  52.0%  · held   50% of SMTs
+     30m low ▲   n   968  SMT race  50.6%  control  50.2%  · held   52% of SMTs
+     60m high ▼  n   686  SMT race  50.4%  control  54.2%  · held   38% of SMTs
+     60m low ▲   n   593  SMT race  50.6%  control  50.1%  · held   42% of SMTs
+     OR  high ▼  n   151  SMT race  43.0%  control  56.6%  · held   18% of SMTs
+     OR  low ▲   n   146  SMT race  44.5%  control  50.4%  · held   30% of SMTs
+
+====================================================================================================
+B. FISHING on 2018–24: 635 heads (71 base + 564 random combinations) × 3 targets
+
+race won (fade) (n 19262): p<0.01 24 heads (shifted-target null: mean 8.6, max 22) · BH-FDR 10% survivors 17 (null mean 0.5, max 2) · Bonferroni 1 (null max 1)
+
+30-min move (fade, σ) (n 19262): p<0.01 11 heads (shifted-target null: mean 8.1, max 25) · BH-FDR 10% survivors 0 (null mean 1.4, max 12) · Bonferroni 0 (null max 4)
+
+SMT held (vs synced) (n 18893): p<0.01 307 heads (shifted-target null: mean 12.5, max 24) · BH-FDR 10% survivors 373 (null mean 2.5, max 20) · Bonferroni 235 (null max 2)
+
+====================================================================================================
+C. LOCKED TEST 2025–26: train survivors (BH) and the top-12 train heads, same sign and one-sided p<0.05 out of sample?
+
+race won (fade): 17 train survivors
+   [BH] distON                                         train t  +4.41 · test t  +1.39  
+   [BH] momOpen-srw                                    train t  -3.86 · test t  -1.25  
+   [BH] momOpen>1.6&relStr>-0.138                      train t  -3.74 · test t  -0.79  
+   [BH] distON-k30                                     train t  +3.64 · test t  +0.91  
+   [BH] atr_pct-distON                                 train t  -3.57 · test t  -1.44  
+   [BH] momOpen                                        train t  -3.49 · test t  -1.16  
+   [BH] relStr>0.132                                   train t  -3.44 · test t  -1.73  HOLDS
+   [BH] max(srw,distON)                                train t  +3.35 · test t  +0.83  
+   [BH] lag*pm_atr                                     train t  -3.29 · test t  -0.24  
+   [BH] relStr                                         train t  -3.27 · test t  -0.77  
+   [BH] max(k60,relStr)                                train t  -3.19 · test t  -0.48  
+   [BH] distON-beta60                                  train t  +3.17 · test t  +2.00  HOLDS
+   [BH] opex_week*roll_week                            train t  -3.10 · test t  -2.73  HOLDS
+   [BH] roll_week>0                                    train t  +3.07 · test t  +2.87  HOLDS
+   [BH] roll_week                                      train t  +3.07 · test t  +2.87  HOLDS
+   [BH] refA_sig>1.9&roll_week>0                       train t  +3.04 · test t  +0.75  
+   [BH] refA_sig>1.28&roll_week>0                      train t  +3.03 · test t  +1.66  HOLDS
+   → train survivors that hold out of sample: 6 of 17
+
+30-min move (fade, σ): 0 train survivors
+        dayExt                                         train t  -3.26 · test t  +0.04  
+        overA>-0.358                                   train t  -3.12 · test t  +0.98  
+        max(dayExt,posDay)                             train t  -3.04 · test t  +0.49  
+        relStr                                         train t  -2.97 · test t  -0.55  
+        relStr-rvol                                    train t  -2.84 · test t  -0.13  
+        srw-dayExt                                     train t  +2.78 · test t  +0.89  
+        relStr*mom30                                   train t  +2.68 · test t  -0.82  
+        onExt                                          train t  -2.67 · test t  -0.05  
+        onExt>0                                        train t  -2.67 · test t  -0.05  
+        relStr>0.132                                   train t  -2.66 · test t  -0.65  
+        dayExt-qopex_week                              train t  -2.60 · test t  -1.14  
+        max(dayExt,dte)                                train t  -2.51 · test t  +0.54  
+   → train survivors that hold out of sample: 0 of 0
+
+SMT held (vs synced): 373 train survivors
+   [BH] overA>-0.358                                   train t -22.62 · test t  -9.76  HOLDS
+   [BH] kOR>0                                          train t -22.16 · test t -10.07  HOLDS
+   [BH] kOR                                            train t -22.16 · test t -10.07  HOLDS
+   [BH] k30>0                                          train t +21.08 · test t  +9.46  HOLDS
+   [BH] k30                                            train t +21.08 · test t  +9.46  HOLDS
+   [BH] overB>-0.449                                   train t -19.64 · test t  -6.25  HOLDS
+   [BH] refB_pct>0.282&kOR>0                           train t -18.45 · test t  -7.76  HOLDS
+   [BH] lag-overB                                      train t +17.40 · test t  +6.00  HOLDS
+   [BH] overB>-0.231                                   train t -17.18 · test t  -6.39  HOLDS
+   [BH] k30-dayExt                                     train t +15.80 · test t  +7.48  HOLDS
+   [BH] distON>0.688&k30>0                             train t +15.65 · test t  +6.34  HOLDS
+   [BH] k30-k60                                        train t +15.45 · test t  +7.46  HOLDS
+   [BH] max(sig30_pct,kOR)                             train t -15.32 · test t  -5.20  HOLDS
+   [BH] kOR-distPD                                     train t -15.24 · test t  -8.55  HOLDS
+   [BH] overA                                          train t -15.12 · test t -10.80  HOLDS
+   [BH] lagMx>0.115&nSameSide>1                        train t +14.54 · test t  +5.07  HOLDS
+   [BH] max(disp60,k30)                                train t +14.31 · test t  +7.52  HOLDS
+   [BH] kOR>0&atr_pct>2.26                             train t -14.02 · test t  -4.34  HOLDS
+   [BH] lag                                            train t +13.91 · test t  +4.55  HOLDS
+   [BH] overB-refRatio                                 train t -13.84 · test t  -5.92  HOLDS
+   [BH] momOpen>0.122&overA>-0.124                     train t -13.64 · test t  -6.25  HOLDS
+   [BH] max(kOR,on_atr)                                train t -13.62 · test t  -5.48  HOLDS
+   [BH] carry-k30                                      train t -13.18 · test t  -9.51  HOLDS
+   [BH] lagMx                                          train t +12.88 · test t  +4.06  HOLDS
+   [BH] rvol-lag                                       train t -12.79 · test t  -3.01  HOLDS
+   [BH] lagMx-rv_rel                                   train t +12.70 · test t  +4.41  HOLDS
+   [BH] distPD>1.26&k30>0                              train t +12.59 · test t  +6.51  HOLDS
+   [BH] k30-rv_rel                                     train t +12.43 · test t  +5.87  HOLDS
+   [BH] overB                                          train t -12.34 · test t  -4.57  HOLDS
+   [BH] lagMx>0.047                                    train t +12.29 · test t  +3.29  HOLDS
+   [BH] max(lagMx,winMin)                              train t +12.19 · test t  +4.70  HOLDS
+   [BH] refA_sig>1.52&lagMx>0.123                      train t +11.93 · test t  +2.99  HOLDS
+   [BH] dte-overA                                      train t +11.79 · test t  +5.65  HOLDS
+   [BH] nSyncd-k30                                     train t -11.64 · test t  -6.16  HOLDS
+   [BH] dow-kOR                                        train t +11.43 · test t  +4.33  HOLDS
+   [BH] overB*refRatio                                 train t +11.41 · test t  +2.25  HOLDS
+   [BH] carry-lag                                      train t -11.19 · test t  -4.69  HOLDS
+   [BH] lagGrow-disp60                                 train t -11.14 · test t  -4.26  HOLDS
+   [BH] lag>0.0346                                     train t +10.52 · test t  +5.36  HOLDS
+   [BH] max(dte,k30)                                   train t +10.46 · test t  +5.39  HOLDS
+   → train survivors that hold out of sample: 40 of 373

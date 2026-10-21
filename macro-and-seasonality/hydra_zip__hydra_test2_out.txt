@@ -1,0 +1,45 @@
+====================================================================================================
+1. THE WHOLE FISHING NET AS ONE MODEL (gradient boosting on all heads, fit 2018–24, scored 2025–26)
+   race won fading the SMT: test AUC 0.509 · shifted-label nulls 0.501 (max 0.521)
+   SMT held vs synced: test AUC 0.761 · shifted-label nulls 0.503 (max 0.545)
+
+====================================================================================================
+2. THE ROLL-WEEK HEAD (the one directional head that survived both periods)
+   2018–24 roll week : SMTs  1517 on  136 days · fade won  54.0% [51.5–56.5] · always long  49.2%
+   2018–24 other wks: SMTs 17117 on 1549 days · fade won  49.1% [48.3–49.8] · always long  51.3%
+   2025–26 roll week : SMTs   285 on   30 days · fade won  57.9% [52.1–63.5] · always long  49.8%
+   2025–26 other wks: SMTs  3312 on  329 days · fade won  49.2% [47.5–50.9] · always long  50.2%
+   by year, roll week fade won % (other weeks): 2018 54 (49) n231 · 2019 57 (49) n175 · 2020 54 (49) n256 · 2021 56 (50) n270 · 2022 58 (47) n187 · 2023 48 (49) n215 · 2024 51 (50) n242 · 2025 60 (50) n223 · 2026 53 (48) n75
+   controls 2018–24: roll week fade won 49.4% · other weeks 50.2%
+   controls 2025–26: roll week fade won 55.2% · other weeks 51.2%
+
+====================================================================================================
+3. AFTER THE WINDOW: fade race from the window close (held SMTs, controls) or from the sync bar (synced SMTs)
+   2018–24 held SMTs                 n  7914 · fade won  50.0% [48.9–51.1] · always long  50.8%
+   2018–24 synced SMTs (from sync)   n  9475 · fade won  50.4% [49.4–51.4] · always long  51.5%
+   2018–24 controls (window close)   n 18195 · fade won  49.2% [48.5–49.9] · always long  50.1%
+      30m: held  50.1% (n 5079) vs controls  49.4% (n 12693)
+      60m: held  49.9% (n 2718) vs controls  48.7% (n 5295)
+      OR : held  48.7% (n 117) vs controls  47.8% (n 207)
+   2025–26 held SMTs                 n  1471 · fade won  50.3% [47.8–52.9] · always long  49.4%
+   2025–26 synced SMTs (from sync)   n  1891 · fade won  51.2% [49.0–53.5] · always long  49.3%
+   2025–26 controls (window close)   n  4047 · fade won  48.7% [47.2–50.2] · always long  50.9%
+      30m: held  48.8% (n 970) vs controls  49.3% (n 2769)
+      60m: held  53.6% (n 481) vs controls  47.2% (n 1217)
+      OR : held  45.0% (n 20) vs controls  50.8% (n 61)
+
+====================================================================================================
+4. SYNC ODDS: P(sister takes its level before the window ends) = 2Φ(−gap / (κ · σ1 · √minutes left))
+   κ fit on 2018–24: all 0.540 · 30m 0.485 · 60m 0.620 · OR 0.585
+
+   2018–24: n 18421 · synced 54%
+      base rate by window kind    AUC 0.572 · Brier 0.2427
+      one κ                       AUC 0.724 · Brier 0.2266
+      κ per window kind           AUC 0.727 · Brier 0.2252
+
+   2025–26: n 3554 · synced 56%
+      base rate by window kind    AUC 0.578 · Brier 0.2409
+      one κ                       AUC 0.695 · Brier 0.2371
+      κ per window kind           AUC 0.700 · Brier 0.2350
+   2025–26 calibration (κ per kind): 3→14% n304 · 15→32% n173 · 25→36% n178 · 35→43% n206 · 45→48% n259 · 55→53% n275 · 65→61% n360 · 75→60% n445 · 85→66% n600 · 95→76% n754
+   all fished heads + physics (boosting): test AUC 0.759  vs physics alone 0.700
