@@ -1,0 +1,218 @@
+====================================================================================================
+NQ
+
+NFP: n {'full': 98, 'train': 81, 'test': 17}
+   sessions full : asia 101% · london 96% · nyam 132% · lunch 115% · pm 98% · settle 83%
+   sessions train: asia 100% · london 95% · nyam 132% · lunch 114% · pm 91% · settle 83%
+   sessions test : asia 108% · london 97% · nyam 145% · lunch 133% · pm 144% · settle 110%
+   stage2 opposes stage1              full 53% (n98) · 2018–24 51% (n81) · 2025–26 65% (n17) · normal 51% (n1326)
+   next day continues                 full 47% (n98) · 2018–24 51% (n81) · 2025–26 29% (n17) · normal 48% (n1341)
+   gap full fill in RTH               full 54% (n95) · 2018–24 56% (n79) · 2025–26 44% (n16) · normal 63% (n1309)
+   gap 50% by 10:00                   full 53% (n95) · 2018–24 58% (n79) · 2025–26 25% (n16) · normal 57% (n1309)
+   RTH low in 09:30–10:00             full 39% (n98) · 2018–24 44% (n81) · 2025–26 12% (n17) · normal 33% (n1342)
+   RTH high in 09:30–10:00            full 28% (n98) · 2018–24 25% (n81) · 2025–26 41% (n17) · normal 28% (n1342)
+   9:50–10:10 reverses the trend      full 42% (n98) · 2018–24 40% (n81) · 2025–26 53% (n17) · normal 47% (n1334)
+   11:30–13:30 reverses the trend     full 45% (n98) · 2018–24 44% (n81) · 2025–26 47% (n17) · normal 49% (n1332)
+   15:15–15:45 reverses the trend     full 52% (n98) · 2018–24 49% (n81) · 2025–26 65% (n17) · normal 50% (n1328)
+
+CPI: n {'full': 96, 'train': 79, 'test': 17}
+   sessions full : asia 84% · london 97% · nyam 116% · lunch 107% · pm 117% · settle 91%
+   sessions train: asia 85% · london 98% · nyam 116% · lunch 105% · pm 114% · settle 94%
+   sessions test : asia 110% · london 89% · nyam 92% · lunch 125% · pm 86% · settle 86%
+   stage2 opposes stage1              full 59% (n95) · 2018–24 56% (n78) · 2025–26 71% (n17) · normal 51% (n1326)
+   next day continues                 full 51% (n95) · 2018–24 52% (n79) · 2025–26 44% (n16) · normal 48% (n1341)
+   gap full fill in RTH               full 58% (n95) · 2018–24 62% (n78) · 2025–26 41% (n17) · normal 63% (n1309)
+   gap 50% by 10:00                   full 57% (n95) · 2018–24 62% (n78) · 2025–26 35% (n17) · normal 57% (n1309)
+   RTH low in 09:30–10:00             full 38% (n96) · 2018–24 38% (n79) · 2025–26 35% (n17) · normal 33% (n1342)
+   RTH high in 09:30–10:00            full 27% (n96) · 2018–24 27% (n79) · 2025–26 29% (n17) · normal 28% (n1342)
+   9:50–10:10 reverses the trend      full 48% (n95) · 2018–24 46% (n78) · 2025–26 59% (n17) · normal 47% (n1334)
+   11:30–13:30 reverses the trend     full 48% (n94) · 2018–24 48% (n77) · 2025–26 47% (n17) · normal 49% (n1332)
+   15:15–15:45 reverses the trend     full 44% (n95) · 2018–24 40% (n78) · 2025–26 65% (n17) · normal 50% (n1328)
+   larger move opposite first sweep   full 30% (n96) · 2018–24 30% (n79) · 2025–26 29% (n17) · normal 44% (n1337)
+
+FOMC: n {'full': 68, 'train': 55, 'test': 13}
+   sessions full : asia 84% · london 81% · nyam 80% · lunch 77% · pm 246% · pre 99% · stmt 289% · presser 274% · settle 171%
+   sessions train: asia 79% · london 88% · nyam 80% · lunch 82% · pm 250% · pre 96% · stmt 302% · presser 260% · settle 180%
+   sessions test : asia 94% · london 73% · nyam 79% · lunch 62% · pm 201% · pre 114% · stmt 230% · presser 230% · settle 184%
+   press conf. opposes statement      full 46% (n68) · 2018–24 49% (n55) · 2025–26 31% (n13) · normal 51% (n1332)
+   gap full fill in RTH               full 74% (n68) · 2018–24 69% (n55) · 2025–26 92% (n13) · normal 63% (n1309)
+   RTH high after 14:00               full 74% (n68) · 2018–24 76% (n55) · 2025–26 62% (n13) · normal 37% (n1342)
+   RTH low after 14:00                full 57% (n68) · 2018–24 53% (n55) · 2025–26 77% (n13) · normal 27% (n1342)
+   next day continues                 full 51% (n68) · 2018–24 56% (n55) · 2025–26 31% (n13) · normal 48% (n1341)
+   asia tight/wide full : RTH range ÷ ADR tight 1.02 (n43) vs wide 0.81 (n25)
+   asia tight/wide train: RTH range ÷ ADR tight 1.05 (n36) vs wide 0.81 (n19)
+   asia tight/wide test : RTH range ÷ ADR tight 0.71 (n7) vs wide 0.83 (n6)
+   RTH range ÷ ADR (median)           full 93% (n68) · 2018–24 99% (n55) · 2025–26 77% (n13) · normal 71% (n1342)
+   next day takes FOMC high           full 62% (n68) · 2018–24 60% (n55) · 2025–26 69% (n13)
+   next day takes FOMC low            full 44% (n68) · 2018–24 47% (n55) · 2025–26 31% (n13)
+   next day takes both                full 12% (n68) · 2018–24 13% (n55) · 2025–26 8% (n13)
+   FOMC range → next day full : Spearman 0.27 · next-day range ÷ ADR after a big FOMC day 1.08 vs small 0.74
+   FOMC range → next day train: Spearman 0.26 · next-day range ÷ ADR after a big FOMC day 1.11 vs small 0.75
+   FOMC range → next day test : Spearman 0.14 · next-day range ÷ ADR after a big FOMC day 0.80 vs small 0.73
+   normal days: next day takes the high 55% · low 43% · both 9%
+
+PRE: n {'full': 64, 'train': 51, 'test': 13}
+   sessions full : asia 100% · london 96% · nyam 98% · lunch 94% · pm 94% · settle 118%
+   sessions train: asia 101% · london 99% · nyam 99% · lunch 96% · pm 95% · settle 142%
+   sessions test : asia 97% · london 86% · nyam 90% · lunch 80% · pm 88% · settle 65%
+   decision day takes D1 high         full 67% (n64) · 2018–24 69% (n51) · 2025–26 62% (n13)
+   decision day takes D1 low          full 52% (n64) · 2018–24 47% (n51) · 2025–26 69% (n13)
+   decision day takes both            full 27% (n64) · 2018–24 24% (n51) · 2025–26 38% (n13)
+   normal days: next day takes the high 56% · low 44% · both 12%
+   RTH range ÷ ADR (median)           full 69% (n64) · 2018–24 71% (n51) · 2025–26 59% (n13) · normal 71% (n1342)
+
+POST: n {'full': 67, 'train': 54, 'test': 13}
+   sessions full : asia 123% · london 118% · nyam 126% · lunch 107% · pm 115% · settle 145%
+   sessions train: asia 114% · london 118% · nyam 125% · lunch 105% · pm 114% · settle 155%
+   sessions test : asia 141% · london 121% · nyam 133% · lunch 116% · pm 89% · settle 111%
+   RTH range ÷ ADR (median)           full 88% (n67) · 2018–24 102% (n54) · 2025–26 72% (n13) · normal 71% (n1342)
+   up-close                           full 49% (n67) · 2018–24 44% (n54) · 2025–26 69% (n13) · normal 54% (n1342)
+
+HOLLOW Mon: n {'full': 88, 'train': 71, 'test': 17}
+   sessions full : asia 113% · london 105% · nyam 108% · lunch 108% · pm 110% · settle 89%
+   sessions train: asia 109% · london 107% · nyam 102% · lunch 104% · pm 107% · settle 86%
+   sessions test : asia 111% · london 98% · nyam 135% · lunch 118% · pm 119% · settle 92%
+   trend day (|net| ≥ ½ range)        full 55% (n88) · 2018–24 55% (n71) · 2025–26 53% (n17) · normal 46% (n301)
+   up-close                           full 57% (n88) · 2018–24 58% (n71) · 2025–26 53% (n17) · normal 59% (n301)
+   net ÷ ADR (mean)                   full +0.052 · 2018–24 +0.052 · 2025–26 +0.049 · normal +0.086
+   NWOG CE touched by today           full 88% (n88) · 2018–24 86% (n71) · 2025–26 94% (n17) · normal 86% (n301)
+   gap 50% by 10:00                   full 61% (n82) · 2018–24 60% (n65) · 2025–26 65% (n17) · normal 51% (n272)
+
+HOLLOW Tue: n {'full': 80, 'train': 64, 'test': 16}
+   sessions full : asia 102% · london 108% · nyam 115% · lunch 99% · pm 103% · settle 138%
+   sessions train: asia 98% · london 112% · nyam 120% · lunch 96% · pm 100% · settle 113%
+   sessions test : asia 123% · london 109% · nyam 122% · lunch 109% · pm 103% · settle 162%
+   trend day (|net| ≥ ½ range)        full 55% (n80) · 2018–24 52% (n64) · 2025–26 69% (n16) · normal 44% (n261)
+   up-close                           full 60% (n80) · 2018–24 56% (n64) · 2025–26 75% (n16) · normal 54% (n261)
+   net ÷ ADR (mean)                   full +0.060 · 2018–24 +0.008 · 2025–26 +0.269 · normal +0.019
+   NWOG CE touched by today           full 91% (n80) · 2018–24 89% (n64) · 2025–26 100% (n16) · normal 91% (n261)
+   gap 50% by 10:00                   full 71% (n78) · 2018–24 71% (n62) · 2025–26 69% (n16) · normal 58% (n259)
+
+HOLLOW Wed: n {'full': 79, 'train': 62, 'test': 17}
+   sessions full : asia 111% · london 110% · nyam 117% · lunch 99% · pm 108% · settle 105%
+   sessions train: asia 108% · london 99% · nyam 121% · lunch 97% · pm 105% · settle 82%
+   sessions test : asia 110% · london 137% · nyam 99% · lunch 93% · pm 108% · settle 127%
+   trend day (|net| ≥ ½ range)        full 53% (n79) · 2018–24 55% (n62) · 2025–26 47% (n17) · normal 47% (n243)
+   up-close                           full 57% (n79) · 2018–24 52% (n62) · 2025–26 76% (n17) · normal 50% (n243)
+   net ÷ ADR (mean)                   full +0.060 · 2018–24 +0.001 · 2025–26 +0.273 · normal -0.006
+   NWOG CE touched by today           full 96% (n79) · 2018–24 95% (n62) · 2025–26 100% (n17) · normal 92% (n243)
+   gap 50% by 10:00                   full 53% (n77) · 2018–24 52% (n60) · 2025–26 59% (n17) · normal 58% (n243)
+
+HOLLOW Thu: n {'full': 76, 'train': 63, 'test': 13}
+   sessions full : asia 106% · london 96% · nyam 100% · lunch 100% · pm 98% · settle 124%
+   sessions train: asia 105% · london 89% · nyam 100% · lunch 102% · pm 94% · settle 97%
+   sessions test : asia 100% · london 106% · nyam 100% · lunch 94% · pm 124% · settle 164%
+   trend day (|net| ≥ ½ range)        full 47% (n76) · 2018–24 49% (n63) · 2025–26 38% (n13) · normal 51% (n253)
+   up-close                           full 58% (n76) · 2018–24 57% (n63) · 2025–26 62% (n13) · normal 52% (n253)
+   net ÷ ADR (mean)                   full +0.015 · 2018–24 +0.001 · 2025–26 +0.080 · normal -0.022
+   NWOG CE touched by today           full 96% (n76) · 2018–24 95% (n63) · 2025–26 100% (n13) · normal 91% (n253)
+   gap 50% by 10:00                   full 61% (n75) · 2018–24 60% (n62) · 2025–26 69% (n13) · normal 61% (n251)
+====================================================================================================
+ES
+
+NFP: n {'full': 98, 'train': 81, 'test': 17}
+   sessions full : asia 102% · london 95% · nyam 131% · lunch 119% · pm 113% · settle 98%
+   sessions train: asia 104% · london 98% · nyam 128% · lunch 120% · pm 97% · settle 100%
+   sessions test : asia 100% · london 88% · nyam 144% · lunch 135% · pm 144% · settle 90%
+   stage2 opposes stage1              full 50% (n96) · 2018–24 48% (n79) · 2025–26 59% (n17) · normal 52% (n1365)
+   next day continues                 full 36% (n97) · 2018–24 35% (n80) · 2025–26 41% (n17) · normal 48% (n1407)
+   gap full fill in RTH               full 53% (n95) · 2018–24 53% (n79) · 2025–26 50% (n16) · normal 62% (n1393)
+   gap 50% by 10:00                   full 45% (n95) · 2018–24 51% (n79) · 2025–26 19% (n16) · normal 52% (n1393)
+   RTH low in 09:30–10:00             full 37% (n98) · 2018–24 41% (n81) · 2025–26 18% (n17) · normal 29% (n1416)
+   RTH high in 09:30–10:00            full 28% (n98) · 2018–24 22% (n81) · 2025–26 53% (n17) · normal 24% (n1416)
+   9:50–10:10 reverses the trend      full 45% (n97) · 2018–24 39% (n80) · 2025–26 76% (n17) · normal 49% (n1381)
+   11:30–13:30 reverses the trend     full 37% (n98) · 2018–24 38% (n81) · 2025–26 29% (n17) · normal 47% (n1387)
+   15:15–15:45 reverses the trend     full 58% (n97) · 2018–24 56% (n81) · 2025–26 69% (n16) · normal 50% (n1380)
+
+CPI: n {'full': 98, 'train': 79, 'test': 19}
+   sessions full : asia 79% · london 98% · nyam 117% · lunch 109% · pm 107% · settle 99%
+   sessions train: asia 79% · london 99% · nyam 116% · lunch 106% · pm 106% · settle 98%
+   sessions test : asia 79% · london 91% · nyam 111% · lunch 110% · pm 98% · settle 93%
+   stage2 opposes stage1              full 49% (n95) · 2018–24 48% (n77) · 2025–26 56% (n18) · normal 52% (n1365)
+   next day continues                 full 52% (n98) · 2018–24 54% (n79) · 2025–26 42% (n19) · normal 48% (n1407)
+   gap full fill in RTH               full 61% (n98) · 2018–24 63% (n79) · 2025–26 53% (n19) · normal 62% (n1393)
+   gap 50% by 10:00                   full 53% (n98) · 2018–24 51% (n79) · 2025–26 63% (n19) · normal 52% (n1393)
+   RTH low in 09:30–10:00             full 31% (n98) · 2018–24 30% (n79) · 2025–26 32% (n19) · normal 29% (n1416)
+   RTH high in 09:30–10:00            full 26% (n98) · 2018–24 25% (n79) · 2025–26 26% (n19) · normal 24% (n1416)
+   9:50–10:10 reverses the trend      full 48% (n95) · 2018–24 48% (n77) · 2025–26 50% (n18) · normal 49% (n1381)
+   11:30–13:30 reverses the trend     full 51% (n95) · 2018–24 52% (n77) · 2025–26 44% (n18) · normal 47% (n1387)
+   15:15–15:45 reverses the trend     full 54% (n95) · 2018–24 55% (n77) · 2025–26 50% (n18) · normal 50% (n1380)
+   larger move opposite first sweep   full 33% (n98) · 2018–24 29% (n79) · 2025–26 47% (n19) · normal 44% (n1414)
+
+FOMC: n {'full': 68, 'train': 55, 'test': 13}
+   sessions full : asia 83% · london 84% · nyam 80% · lunch 77% · pm 241% · pre 106% · stmt 294% · presser 249% · settle 169%
+   sessions train: asia 84% · london 88% · nyam 79% · lunch 79% · pm 254% · pre 104% · stmt 296% · presser 275% · settle 161%
+   sessions test : asia 82% · london 83% · nyam 76% · lunch 61% · pm 227% · pre 104% · stmt 198% · presser 231% · settle 278%
+   press conf. opposes statement      full 54% (n67) · 2018–24 57% (n54) · 2025–26 38% (n13) · normal 50% (n1377)
+   gap full fill in RTH               full 76% (n68) · 2018–24 76% (n55) · 2025–26 77% (n13) · normal 62% (n1393)
+   RTH high after 14:00               full 71% (n68) · 2018–24 75% (n55) · 2025–26 54% (n13) · normal 39% (n1416)
+   RTH low after 14:00                full 68% (n68) · 2018–24 64% (n55) · 2025–26 85% (n13) · normal 29% (n1416)
+   next day continues                 full 51% (n68) · 2018–24 55% (n55) · 2025–26 38% (n13) · normal 48% (n1407)
+   asia tight/wide full : RTH range ÷ ADR tight 0.94 (n43) vs wide 0.93 (n25)
+   asia tight/wide train: RTH range ÷ ADR tight 1.10 (n33) vs wide 0.98 (n22)
+   asia tight/wide test : RTH range ÷ ADR tight 0.83 (n10) vs wide 0.90 (n3)
+   RTH range ÷ ADR (median)           full 94% (n68) · 2018–24 108% (n55) · 2025–26 85% (n13) · normal 68% (n1416)
+   next day takes FOMC high           full 50% (n68) · 2018–24 45% (n55) · 2025–26 69% (n13)
+   next day takes FOMC low            full 50% (n68) · 2018–24 55% (n55) · 2025–26 31% (n13)
+   next day takes both                full 7% (n68) · 2018–24 7% (n55) · 2025–26 8% (n13)
+   FOMC range → next day full : Spearman 0.40 · next-day range ÷ ADR after a big FOMC day 1.09 vs small 0.75
+   FOMC range → next day train: Spearman 0.39 · next-day range ÷ ADR after a big FOMC day 1.09 vs small 0.76
+   FOMC range → next day test : Spearman 0.33 · next-day range ÷ ADR after a big FOMC day 0.97 vs small 0.74
+   normal days: next day takes the high 57% · low 44% · both 10%
+
+PRE: n {'full': 64, 'train': 51, 'test': 13}
+   sessions full : asia 98% · london 98% · nyam 94% · lunch 92% · pm 97% · settle 112%
+   sessions train: asia 96% · london 106% · nyam 94% · lunch 94% · pm 105% · settle 125%
+   sessions test : asia 99% · london 78% · nyam 80% · lunch 80% · pm 63% · settle 75%
+   decision day takes D1 high         full 69% (n64) · 2018–24 71% (n51) · 2025–26 62% (n13)
+   decision day takes D1 low          full 55% (n64) · 2018–24 49% (n51) · 2025–26 77% (n13)
+   decision day takes both            full 27% (n64) · 2018–24 24% (n51) · 2025–26 38% (n13)
+   normal days: next day takes the high 57% · low 44% · both 12%
+   RTH range ÷ ADR (median)           full 69% (n64) · 2018–24 71% (n51) · 2025–26 49% (n13) · normal 68% (n1416)
+
+POST: n {'full': 67, 'train': 54, 'test': 13}
+   sessions full : asia 115% · london 118% · nyam 134% · lunch 122% · pm 132% · settle 178%
+   sessions train: asia 107% · london 116% · nyam 131% · lunch 119% · pm 132% · settle 179%
+   sessions test : asia 165% · london 134% · nyam 127% · lunch 125% · pm 121% · settle 187%
+   RTH range ÷ ADR (median)           full 97% (n67) · 2018–24 101% (n54) · 2025–26 80% (n13) · normal 68% (n1416)
+   up-close                           full 48% (n67) · 2018–24 44% (n54) · 2025–26 62% (n13) · normal 54% (n1416)
+
+HOLLOW Mon: n {'full': 90, 'train': 72, 'test': 18}
+   sessions full : asia 98% · london 99% · nyam 120% · lunch 114% · pm 116% · settle 96%
+   sessions train: asia 109% · london 99% · nyam 115% · lunch 115% · pm 118% · settle 89%
+   sessions test : asia 85% · london 99% · nyam 138% · lunch 113% · pm 122% · settle 108%
+   trend day (|net| ≥ ½ range)        full 42% (n90) · 2018–24 39% (n72) · 2025–26 56% (n18) · normal 46% (n311)
+   up-close                           full 58% (n90) · 2018–24 60% (n72) · 2025–26 50% (n18) · normal 59% (n311)
+   net ÷ ADR (mean)                   full +0.031 · 2018–24 +0.020 · 2025–26 +0.075 · normal +0.062
+   NWOG CE touched by today           full 88% (n90) · 2018–24 89% (n72) · 2025–26 83% (n18) · normal 87% (n311)
+   gap 50% by 10:00                   full 59% (n85) · 2018–24 58% (n67) · 2025–26 61% (n18) · normal 46% (n293)
+
+HOLLOW Tue: n {'full': 81, 'train': 64, 'test': 17}
+   sessions full : asia 102% · london 121% · nyam 117% · lunch 114% · pm 103% · settle 123%
+   sessions train: asia 101% · london 127% · nyam 118% · lunch 111% · pm 104% · settle 108%
+   sessions test : asia 108% · london 95% · nyam 111% · lunch 103% · pm 89% · settle 164%
+   trend day (|net| ≥ ½ range)        full 47% (n81) · 2018–24 44% (n64) · 2025–26 59% (n17) · normal 47% (n272)
+   up-close                           full 58% (n81) · 2018–24 53% (n64) · 2025–26 76% (n17) · normal 50% (n272)
+   net ÷ ADR (mean)                   full +0.026 · 2018–24 -0.037 · 2025–26 +0.264 · normal +0.002
+   NWOG CE touched by today           full 94% (n81) · 2018–24 97% (n64) · 2025–26 82% (n17) · normal 90% (n272)
+   gap 50% by 10:00                   full 53% (n81) · 2018–24 52% (n64) · 2025–26 59% (n17) · normal 51% (n271)
+
+HOLLOW Wed: n {'full': 78, 'train': 62, 'test': 16}
+   sessions full : asia 97% · london 100% · nyam 118% · lunch 101% · pm 108% · settle 112%
+   sessions train: asia 110% · london 97% · nyam 124% · lunch 103% · pm 109% · settle 117%
+   sessions test : asia 100% · london 106% · nyam 104% · lunch 98% · pm 117% · settle 131%
+   trend day (|net| ≥ ½ range)        full 55% (n78) · 2018–24 55% (n62) · 2025–26 56% (n16) · normal 47% (n254)
+   up-close                           full 60% (n78) · 2018–24 56% (n62) · 2025–26 75% (n16) · normal 51% (n254)
+   net ÷ ADR (mean)                   full +0.080 · 2018–24 +0.047 · 2025–26 +0.209 · normal +0.003
+   NWOG CE touched by today           full 95% (n78) · 2018–24 98% (n62) · 2025–26 81% (n16) · normal 93% (n254)
+   gap 50% by 10:00                   full 48% (n77) · 2018–24 48% (n61) · 2025–26 50% (n16) · normal 55% (n253)
+
+HOLLOW Thu: n {'full': 75, 'train': 63, 'test': 12}
+   sessions full : asia 111% · london 99% · nyam 98% · lunch 97% · pm 102% · settle 117%
+   sessions train: asia 111% · london 95% · nyam 101% · lunch 95% · pm 99% · settle 105%
+   sessions test : asia 110% · london 105% · nyam 85% · lunch 105% · pm 101% · settle 129%
+   trend day (|net| ≥ ½ range)        full 41% (n75) · 2018–24 41% (n63) · 2025–26 42% (n12) · normal 48% (n264)
+   up-close                           full 53% (n75) · 2018–24 57% (n63) · 2025–26 33% (n12) · normal 54% (n264)
+   net ÷ ADR (mean)                   full -0.026 · 2018–24 -0.030 · 2025–26 -0.002 · normal -0.003
+   NWOG CE touched by today           full 97% (n75) · 2018–24 98% (n63) · 2025–26 92% (n12) · normal 92% (n264)
+   gap 50% by 10:00                   full 50% (n74) · 2018–24 48% (n62) · 2025–26 58% (n12) · normal 55% (n262)

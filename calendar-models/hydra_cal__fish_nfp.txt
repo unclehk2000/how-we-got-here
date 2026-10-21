@@ -1,0 +1,108 @@
+HYDRA · NFP days (snapshot 08:29) · NQ train 2018–24 n=80 · locked 2025–26 n=17 · 404 heads (26 base) × 17 targets
+
+B. FISHING (2018–24): BH 10% survivors vs circularly shifted targets (20 shifts)
+  stage 1 up (08:30–08:50)           survivors   0 | shifted null mean 1.4 max 10 | best raw p 0.0053 (drPos*adrPct)
+  stage 2 up (08:50–09:30)           survivors   0 | shifted null mean 3.2 max 53 | best raw p 0.0096 (drRng>0.159&wkMove>1.31)
+  NY AM up (09:30–11:00)             survivors   0 | shifted null mean 1.2 max 12 | best raw p 0.0006 (max(pdRng,adrPct))
+  RTH up                             survivors   0 | shifted null mean 3.1 max 42 | best raw p 0.0004 (dom*belowPDL)
+  08:30→16:14 up                     survivors   4 | shifted null mean 4.5 max 53 | best raw p 0.0002 (abovePDH-drRng)
+  stage 2 continues stage 1          survivors   0 | shifted null mean 1.2 max 5 | best raw p 0.0020 (wkMove*preRng)
+  day goes against the week          survivors   0 | shifted null mean 1.9 max 14 | best raw p 0.0008 (abovePDH-lonMove)
+  reaches further up than down       survivors   3 | shifted null mean 4.8 max 37 | best raw p 0.0000 (dWO>0.0565&adrPct>2.46)
+  first DR side taken wins           survivors   0 | shifted null mean 6.3 max 40 | best raw p 0.0034 (preRng>0.351)
+  new day high after 08:30           survivors  26 | shifted null mean 6.7 max 60 | best raw p 0.0000 (asiaRng*belowPDL)
+  new day low after 08:30            survivors  24 | shifted null mean 8.6 max 57 | best raw p 0.0000 (asiaRng*belowPDL)
+  Monday NY AM up                    survivors   0 | shifted null mean 2.4 max 20 | best raw p 0.0014 (athDist>2.01&t20>0.811)
+  |stage 1| (ADR)                    survivors   2 | shifted null mean 0.9 max 6 | best raw p 0.0000 (t5>-0.265&abovePDH>0)
+  |stage 2| (ADR)                    survivors   0 | shifted null mean 0.3 max 4 | best raw p 0.0057 (t5>-0.0963&drPos>0.784)
+  |NY AM| (ADR)                      survivors 102 | shifted null mean 0.4 max 4 | best raw p 0.0001 (vixRel-wkMove)
+  range after 08:30 (ADR)            survivors 119 | shifted null mean 0.3 max 6 | best raw p 0.0000 (vixRel>-0.0193)
+  Monday's range (ADR)               survivors 172 | shifted null mean 0.3 max 3 | best raw p 0.0000 (pdRng-preMove)
+
+C. LOCKED TEST 2025–26 (same sign, one-sided p < 0.05) and ES replication (same sign on ES 2018–24)
+  new day high after 08:30         preMove                                  train t +4.15 · test t +5.30 (p1s 0.000) HELD · ES t +3.24 same
+  new day high after 08:30         max(dWO,preRng)                          train t -4.03 · test t -2.90 (p1s 0.006) HELD · ES t -4.58 same
+  new day high after 08:30         lonMove-asiaRng                          train t +3.81 · test t +3.56 (p1s 0.001) HELD · ES t +3.88 same
+  new day high after 08:30         belowPDL-lonMove                         train t -3.72 · test t -3.83 (p1s 0.001) HELD · ES t -2.37 same
+  new day high after 08:30         preMove-wkMove                           train t +3.60 · test t +3.79 (p1s 0.001) HELD · ES t +3.07 same
+  new day high after 08:30         max(moPos,preRng)                        train t -3.53 · test t -2.46 (p1s 0.013) HELD · ES t -5.11 same
+  new day high after 08:30         preRng-lonMove                           train t -3.47 · test t -2.29 (p1s 0.018) HELD · ES t -3.77 same
+  new day high after 08:30         pdPos-pdDir                              train t +3.37 · test t +3.16 (p1s 0.003) HELD · ES t +4.00 same
+  new day high after 08:30         max(t5,belowPDL)                         train t -3.34 · test t -1.85 (p1s 0.042) HELD · ES t -2.25 same
+  new day high after 08:30         pdDir-preMove                            train t -3.31 · test t -4.15 (p1s 0.000) HELD · ES t -2.48 same
+  new day high after 08:30         moPos-preMove                            train t -3.17 · test t -5.94 (p1s 0.000) HELD · ES t -2.38 same
+  new day high after 08:30         max(t20,preMove)                         train t +3.15 · test t +2.47 (p1s 0.013) HELD · ES t +1.90 same
+  new day high after 08:30         belowPDL*pdPos                           train t +3.09 · test t +2.32 (p1s 0.017) HELD · ES t +2.33 same
+  new day high after 08:30         lonMove                                  train t +3.05 · test t +4.60 (p1s 0.000) HELD · ES t +1.59 same
+  new day high after 08:30         asiaRng*pdPos                            train t +2.97 · test t +3.25 (p1s 0.003) HELD · ES t +2.52 same
+  new day high after 08:30         preRng-vixRel                            train t -2.82 · test t -2.44 (p1s 0.014) HELD · ES t -3.86 same
+  new day high after 08:30         preRng                                   train t -2.81 · test t -3.08 (p1s 0.004) HELD · ES t -4.68 same
+  new day low after 08:30          max(preMove,moPos)                       train t -4.10 · test t -3.34 (p1s 0.002) HELD · ES t -4.45 same
+  new day low after 08:30          preMove-adrPct                           train t -3.81 · test t -1.91 (p1s 0.038) HELD · ES t -3.20 same
+  new day low after 08:30          max(wkPos,preMove)                       train t -3.72 · test t -3.41 (p1s 0.002) HELD · ES t -4.39 same
+  new day low after 08:30          max(thuDir,preMove)                      train t -3.54 · test t -3.88 (p1s 0.001) HELD · ES t -5.56 same
+  new day low after 08:30          preMove                                  train t -3.52 · test t -3.15 (p1s 0.003) HELD · ES t -3.47 same
+  new day low after 08:30          pdRng-preMove                            train t +3.51 · test t +2.65 (p1s 0.009) HELD · ES t +3.57 same
+  new day low after 08:30          max(preMove,moPrem)                      train t -3.50 · test t -3.61 (p1s 0.001) HELD · ES t -3.87 same
+  new day low after 08:30          pdPos-pdDir                              train t -3.42 · test t -2.11 (p1s 0.026) HELD · ES t -1.62 same
+  new day low after 08:30          max(t5,preMove)                          train t -3.07 · test t -3.62 (p1s 0.001) HELD · ES t -4.00 same
+  range after 08:30 (ADR)          t5>0.545                                 train t -5.22 · test t -2.00 (p1s 0.032) HELD · ES t -4.98 same
+  range after 08:30 (ADR)          max(t5,dWO)                              train t -5.10 · test t -1.97 (p1s 0.034) HELD · ES t -5.64 same
+  range after 08:30 (ADR)          wkMove                                   train t -5.02 · test t -2.09 (p1s 0.027) HELD · ES t -6.05 same
+  range after 08:30 (ADR)          dWO                                      train t -5.02 · test t -2.09 (p1s 0.027) HELD · ES t -6.05 same
+  range after 08:30 (ADR)          athDist-adrPct                           train t +4.94 · test t +3.25 (p1s 0.003) HELD · ES t +2.12 same
+  range after 08:30 (ADR)          max(wkPos,dWO)                           train t -4.61 · test t -1.87 (p1s 0.041) HELD · ES t -5.28 same
+  range after 08:30 (ADR)          vixRel-wkMove                            train t +4.55 · test t +2.07 (p1s 0.028) HELD · ES t +5.61 same
+  range after 08:30 (ADR)          max(dWO,moPos)                           train t -4.43 · test t -2.03 (p1s 0.030) HELD · ES t -5.06 same
+  range after 08:30 (ADR)          dMO>-0.606&t20>-0.782                    train t -4.39 · test t -2.33 (p1s 0.017) HELD · ES t -5.25 same
+  range after 08:30 (ADR)          t5-vixRel                                train t -4.22 · test t -2.10 (p1s 0.027) HELD · ES t -4.84 same
+  range after 08:30 (ADR)          pdRng-dMO                                train t +3.84 · test t +2.28 (p1s 0.019) HELD · ES t +5.76 same
+  range after 08:30 (ADR)          dMO>-0.46                                train t -3.75 · test t -2.33 (p1s 0.017) HELD · ES t -5.31 same
+  Monday's range (ADR)             pdRng-preMove                            train t +4.82 · test t +2.45 (p1s 0.014) HELD · ES t +5.08 same
+  Monday's range (ADR)             preRng-dMO                               train t +4.80 · test t +6.09 (p1s 0.000) HELD · ES t +4.94 same
+  Monday's range (ADR)             max(drRng,preRng)                        train t +4.79 · test t +4.82 (p1s 0.000) HELD · ES t +6.55 same
+  Monday's range (ADR)             t5-drRng                                 train t -4.78 · test t -13.86 (p1s 0.000) HELD · ES t -6.09 same
+  Monday's range (ADR)             t5>-0.0963&drPos>0.784                   train t -4.74 · test t -3.14 (p1s 0.003) HELD · ES t +0.00 opp
+  Monday's range (ADR)             dWO-preRng                               train t -4.72 · test t -4.91 (p1s 0.000) HELD · ES t -4.92 same
+  Monday's range (ADR)             wkMove-drRng                             train t -4.63 · test t -15.28 (p1s 0.000) HELD · ES t -5.62 same
+  Monday's range (ADR)             asiaRng-wkPos                            train t +4.44 · test t +2.32 (p1s 0.017) HELD · ES t +4.36 same
+  Monday's range (ADR)             moPos-pdRng                              train t -4.30 · test t -2.92 (p1s 0.005) HELD · ES t -4.72 same
+  Monday's range (ADR)             drRng-t20                                train t +4.13 · test t +10.16 (p1s 0.000) HELD · ES t +5.08 same
+  Monday's range (ADR)             vixRel>-0.0101                           train t +4.11 · test t +2.43 (p1s 0.014) HELD · ES t +4.65 same
+  Monday's range (ADR)             vix-adrPct                               train t +4.10 · test t +3.13 (p1s 0.003) HELD · ES t +3.80 same
+  Monday's range (ADR)             max(preRng,vixRel)                       train t +4.06 · test t +5.69 (p1s 0.000) HELD · ES t +4.93 same
+  Monday's range (ADR)             vixRel>-0.0193                           train t +4.02 · test t +2.43 (p1s 0.014) HELD · ES t +4.52 same
+  Monday's range (ADR)             vixRel                                   train t +3.98 · test t +2.65 (p1s 0.009) HELD · ES t +4.33 same
+  Monday's range (ADR)             asiaRng-moPos                            train t +3.98 · test t +2.19 (p1s 0.022) HELD · ES t +4.21 same
+  Monday's range (ADR)             pdRng                                    train t +3.82 · test t +2.84 (p1s 0.006) HELD · ES t +4.26 same
+  Monday's range (ADR)             t5-vixRel                                train t -3.82 · test t -3.47 (p1s 0.002) HELD · ES t -4.10 same
+  Monday's range (ADR)             dMO>-0.606&t20>-0.782                    train t -3.80 · test t -2.92 (p1s 0.005) HELD · ES t -3.45 same
+  Monday's range (ADR)             preRng                                   train t +3.79 · test t +2.60 (p1s 0.010) HELD · ES t +5.08 same
+  Monday's range (ADR)             max(asiaRng,vixRel)                      train t +3.76 · test t +2.33 (p1s 0.017) HELD · ES t +3.83 same
+  Monday's range (ADR)             pdRng-dMO                                train t +3.76 · test t +3.00 (p1s 0.004) HELD · ES t +3.87 same
+  Monday's range (ADR)             vixRel-wkMove                            train t +3.76 · test t +3.14 (p1s 0.003) HELD · ES t +3.87 same
+  Monday's range (ADR)             drRng-thuDir                             train t +3.67 · test t +3.87 (p1s 0.001) HELD · ES t +5.42 same
+  Monday's range (ADR)             wkPos-belowPDL                           train t -3.52 · test t -2.65 (p1s 0.009) HELD · ES t -3.23 same
+  Monday's range (ADR)             wkPos                                    train t -3.51 · test t -3.02 (p1s 0.004) HELD · ES t -3.75 same
+  Monday's range (ADR)             moPrem-asiaRng                           train t -3.49 · test t -2.05 (p1s 0.029) HELD · ES t -3.86 same
+  Monday's range (ADR)             wkPos-vix                                train t -3.47 · test t -3.10 (p1s 0.004) HELD · ES t -3.30 same
+  Monday's range (ADR)             drRng                                    train t +3.37 · test t +8.88 (p1s 0.000) HELD · ES t +6.78 same
+  Monday's range (ADR)             thuDir*preMove                           train t +3.36 · test t +2.78 (p1s 0.007) HELD · ES t +2.98 same
+  Monday's range (ADR)             pdDir-pdRng                              train t -3.36 · test t -2.37 (p1s 0.016) HELD · ES t -3.85 same
+  Monday's range (ADR)             vixRel>-0.0789&drRng>0.146               train t +3.34 · test t +2.81 (p1s 0.007) HELD · ES t +3.57 same
+
+  survivors taken to the test: 179 · held in the locked test and same side on ES: 69
+
+D. WHOLE NET (ridge logistic on the base features, fit 2018–24): AUC on 2025–26 vs 200 shuffled-label nulls
+  stage 1 up (08:30–08:50)           AUC 0.483 · null 95th pct 0.767
+  stage 2 up (08:50–09:30)           AUC 0.300 · null 95th pct 0.757
+  NY AM up (09:30–11:00)             AUC 0.800 · null 95th pct 0.757  ← beats the null
+  RTH up                             AUC 0.182 · null 95th pct 0.758
+  08:30→16:14 up                     AUC 0.400 · null 95th pct 0.729
+  stage 2 continues stage 1          AUC 0.639 · null 95th pct 0.750
+  day goes against the week          AUC 0.414 · null 95th pct 0.729
+  reaches further up than down       AUC 0.348 · null 95th pct 0.758
+  first DR side taken wins           AUC 0.538 · null 95th pct 0.788
+  new day high after 08:30           AUC 0.833 · null 95th pct 0.743  ← beats the null
+  new day low after 08:30            AUC 0.667 · null 95th pct 0.712
+  Monday NY AM up                    AUC 0.750 · null 95th pct 0.767

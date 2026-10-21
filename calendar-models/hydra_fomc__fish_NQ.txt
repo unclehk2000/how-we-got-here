@@ -1,0 +1,198 @@
+HYDRA · FOMC days · NQ train 2018–24 n=54 · locked 2025–26 n=13 · 411 heads (29 base) × 13 targets
+
+B. FISHING (2018–24): BH 10% survivors vs circularly shifted targets (20 shifts)
+  stage 1 up                       survivors  21 | shifted null mean 10.4 max 35 | best raw p 0.0000 (preRng>0.535&moDisc>0)
+  stage 2 up                       survivors   4 | shifted null mean 10.4 max 46 | best raw p 0.0000 (dWO>-0.245&moDisc>0)
+  14:00→16:14 up                   survivors   4 | shifted null mean 8.7 max 40 | best raw p 0.0000 (dWO>-0.245&moDisc>0)
+  stage 2 continues stage 1        survivors   6 | shifted null mean 13.7 max 77 | best raw p 0.0000 (belowPDL>0&onRng>0.522)
+  next NY AM up                    survivors   7 | shifted null mean 13.3 max 41 | best raw p 0.0000 (vix>21.8&dWO>1.05)
+  next NY AM with stage 2          survivors   2 | shifted null mean 11.4 max 47 | best raw p 0.0000 (moPos>0.832&belowPDL>0)
+  next NY AM with 14:00→16:14      survivors   8 | shifted null mean 12.6 max 37 | best raw p 0.0000 (dWO>0.908&vix>25.6)
+  post-14:00 extends further up    survivors   6 | shifted null mean 10.8 max 42 | best raw p 0.0000 (dWO>-0.245&moDisc>0)
+  post-14:00 new day high          survivors  21 | shifted null mean 11.8 max 25 | best raw p 0.0000 (pdPos*preRng)
+  post-14:00 new day low           survivors  87 | shifted null mean 14.1 max 48 | best raw p 0.0000 (dWO>-0.245&moDisc>0)
+  |stage 1| (ADR)                  survivors  25 | shifted null mean 6.7 max 16 | best raw p 0.0000 (athDist*pdRng)
+  |stage 2| (ADR)                  survivors   4 | shifted null mean 5.7 max 28 | best raw p 0.0000 (pdPos*preRng)
+  post-14:00 range (ADR)           survivors  20 | shifted null mean 4.4 max 13 | best raw p 0.0000 (pdPos*preRng)
+
+C. LOCKED TEST 2025–26 (same sign, one-sided p < 0.05) and ES replication (same sign on ES 2018–24)
+  stage 1 up                     gap                                      train t +3.11 · test t -0.65 (p1s 0.266) — · ES t +2.04 same
+  stage 1 up                     gap-moDisc                               train t +3.34 · test t -1.53 (p1s 0.077) — · ES t +1.79 same
+  stage 1 up                     vixRel*athDist                           train t -3.01 · test t +0.24 (p1s 0.406) — · ES t -2.00 same
+  stage 1 up                     preMove*moDisc                           train t -5.13 · test t -2.01 (p1s 0.035) HELD · ES t -4.28 same
+  stage 1 up                     adrPct*wkPos                             train t -2.95 · test t +0.35 (p1s 0.365) — · ES t -0.66 same
+  stage 1 up                     belowPDL>0&onMove>0.0645                 train t +5.37 · test t +0.00 (p1s 0.500) — · ES t +0.00 opp
+  stage 1 up                     dWO>0.908&vix>25.6                       train t +5.37 · test t +0.00 (p1s 0.500) — · ES t +0.14 same
+  stage 1 up                     adrPct-gap                               train t -3.10 · test t +0.26 (p1s 0.401) — · ES t -2.75 same
+  stage 1 up                     wkPos*preRng                             train t +3.80 · test t -0.59 (p1s 0.284) — · ES t +4.76 same
+  stage 1 up                     dWO>-0.245&moDisc>0                      train t -10.15 · test t +5.52 (p1s 0.000) — · ES t -1.10 same
+  stage 1 up                     dMO*moDisc                               train t +4.67 · test t -4.53 (p1s 0.000) — · ES t +3.97 same
+  stage 1 up                     pdPos*preRng                             train t +5.52 · test t -0.81 (p1s 0.217) — · ES t +4.93 same
+  stage 1 up                     belowPDL>0&moPos>0.843                   train t +5.34 · test t -2.25 (p1s 0.023) — · ES t +5.56 same
+  stage 1 up                     moPos>0.832&belowPDL>0                   train t +5.37 · test t -2.25 (p1s 0.023) — · ES t +5.59 same
+  stage 1 up                     gap-vix                                  train t +3.61 · test t -0.09 (p1s 0.466) — · ES t +2.19 same
+  stage 1 up                     onMove*moDisc                            train t -3.99 · test t -1.23 (p1s 0.123) — · ES t -3.66 same
+  stage 1 up                     preRng>0.535&moDisc>0                    train t -10.36 · test t +5.52 (p1s 0.000) — · ES t -1.78 same
+  stage 1 up                     dayPos*moDisc                            train t -5.41 · test t -0.17 (p1s 0.434) — · ES t -3.89 same
+  stage 1 up                     onRng*preMove                            train t +3.68 · test t -1.32 (p1s 0.107) — · ES t +5.10 same
+  stage 1 up                     vixRel>-0.0409&moDisc>0                  train t -10.36 · test t +6.47 (p1s 0.000) — · ES t -1.78 same
+  stage 1 up                     vixRel>-0.0488&gap>0.384                 train t +5.67 · test t +0.00 (p1s 0.500) — · ES t +0.82 same
+  stage 2 up                     dWO>-0.245&moDisc>0                      train t -7.64 · test t +3.77 (p1s 0.002) — · ES t -7.15 same
+  stage 2 up                     belowPDL>0&moPos>0.843                   train t +7.01 · test t +3.77 (p1s 0.002) HELD · ES t +7.56 same
+  stage 2 up                     moPos>0.832&belowPDL>0                   train t +7.08 · test t +3.77 (p1s 0.002) HELD · ES t +7.64 same
+  stage 2 up                     dWO-vixRel                               train t +3.71 · test t -0.25 (p1s 0.403) — · ES t +2.63 same
+  14:00→16:14 up                 dWO>0.908&vix>25.6                       train t +6.55 · test t +0.00 (p1s 0.500) — · ES t +0.48 same
+  14:00→16:14 up                 dWO>-0.245&moDisc>0                      train t -8.26 · test t +3.77 (p1s 0.002) — · ES t -8.05 same
+  14:00→16:14 up                 belowPDL>0&moPos>0.843                   train t +6.50 · test t +3.77 (p1s 0.002) HELD · ES t +6.75 same
+  14:00→16:14 up                 moPos>0.832&belowPDL>0                   train t +6.55 · test t +3.77 (p1s 0.002) HELD · ES t +6.81 same
+  stage 2 continues stage 1      max(dom,moPos)                           train t +3.52 · test t -0.08 (p1s 0.469) — · ES t +3.85 same
+  stage 2 continues stage 1      belowPDL>0&onRng>0.522                   train t +7.43 · test t +0.00 (p1s 0.500) — · ES t +0.21 same
+  stage 2 continues stage 1      dWO>-0.245&moDisc>0                      train t +7.35 · test t +2.25 (p1s 0.023) HELD · ES t +0.89 same
+  stage 2 continues stage 1      belowPDL>0&moPos>0.843                   train t +7.28 · test t -5.52 (p1s 0.000) — · ES t +8.48 same
+  stage 2 continues stage 1      moPos>0.832&belowPDL>0                   train t +7.35 · test t -5.52 (p1s 0.000) — · ES t +8.60 same
+  stage 2 continues stage 1      belowPDL*dom                             train t +6.27 · test t -0.13 (p1s 0.451) — · ES t +1.56 same
+  next NY AM up                  belowPDL>0&onMove>0.0645                 train t -6.81 · test t +0.00 (p1s 0.500) — · ES t +0.00 opp
+  next NY AM up                  vix*wkPos                                train t -3.78 · test t +1.33 (p1s 0.105) — · ES t -0.60 same
+  next NY AM up                  dWO>0.908&vix>25.6                       train t -6.81 · test t +0.00 (p1s 0.500) — · ES t -0.48 same
+  next NY AM up                  vix>21.8&dWO>1.05                        train t -6.94 · test t +0.00 (p1s 0.500) — · ES t -6.87 same
+  next NY AM up                  belowPDL>0&moPos>0.843                   train t -6.75 · test t +3.77 (p1s 0.002) — · ES t -6.75 same
+  next NY AM up                  moPos>0.832&belowPDL>0                   train t -6.81 · test t +3.77 (p1s 0.002) — · ES t +0.10 opp
+  next NY AM up                  onRng*preMove                            train t -3.35 · test t -1.96 (p1s 0.038) HELD · ES t -0.61 same
+  next NY AM with stage 2        belowPDL>0&moPos>0.843                   train t -6.26 · test t +4.51 (p1s 0.000) — · ES t -7.85 same
+  next NY AM with stage 2        moPos>0.832&belowPDL>0                   train t -6.30 · test t +4.51 (p1s 0.000) — · ES t -0.10 same
+  next NY AM with 14:00→16:14    abovePDH-dayPos                          train t -3.43 · test t -0.22 (p1s 0.417) — · ES t -0.31 same
+  next NY AM with 14:00→16:14    dWO>0.908&vix>25.6                       train t -7.35 · test t +0.00 (p1s 0.500) — · ES t -8.38 same
+  next NY AM with 14:00→16:14    dayPos*abovePDH                          train t -3.42 · test t -1.40 (p1s 0.095) — · ES t -0.95 same
+  next NY AM with 14:00→16:14    moPos>0.687&vix>19.2                     train t -4.00 · test t -2.69 (p1s 0.010) HELD · ES t -1.89 same
+  next NY AM with 14:00→16:14    dayPos*wkPos                             train t -3.76 · test t -1.59 (p1s 0.071) — · ES t -2.36 same
+  next NY AM with 14:00→16:14    belowPDL>0&moPos>0.843                   train t -7.28 · test t +4.51 (p1s 0.000) — · ES t -8.16 same
+  next NY AM with 14:00→16:14    moPos>0.832&belowPDL>0                   train t -7.35 · test t +4.51 (p1s 0.000) — · ES t -0.16 same
+  next NY AM with 14:00→16:14    abovePDH-preMove                         train t -3.95 · test t +0.15 (p1s 0.442) — · ES t -0.28 same
+  post-14:00 extends further up  belowPDL>0&onMove>0.0645                 train t +7.08 · test t +0.00 (p1s 0.500) — · ES t +0.00 opp
+  post-14:00 extends further up  dWO>0.908&vix>25.6                       train t +7.08 · test t +0.00 (p1s 0.500) — · ES t -0.62 opp
+  post-14:00 extends further up  dWO>-0.245&moDisc>0                      train t -7.64 · test t +4.51 (p1s 0.000) — · ES t -0.62 same
+  post-14:00 extends further up  belowPDL>0&moPos>0.843                   train t +7.01 · test t -2.69 (p1s 0.010) — · ES t +7.28 same
+  post-14:00 extends further up  moPos>0.832&belowPDL>0                   train t +7.08 · test t -2.69 (p1s 0.010) — · ES t +7.35 same
+  post-14:00 extends further up  onRng*lunMove                            train t -3.71 · test t +0.35 (p1s 0.366) — · ES t -3.72 same
+  post-14:00 new day high        dayPos                                   train t +3.03 · test t +1.77 (p1s 0.052) — · ES t +1.62 same
+  post-14:00 new day high        preMove                                  train t +3.10 · test t +1.03 (p1s 0.162) — · ES t +2.56 same
+  post-14:00 new day high        moDisc                                   train t +4.54 · test t -0.20 (p1s 0.424) — · ES t +0.44 same
+  post-14:00 new day high        pdRng*vix                                train t -3.07 · test t +1.58 (p1s 0.071) — · ES t -1.92 same
+  post-14:00 new day high        belowPDL>0&onMove>0.0645                 train t +4.51 · test t +0.00 (p1s 0.500) — · ES t +0.00 opp
+  post-14:00 new day high        max(moDisc,preMove)                      train t +3.27 · test t -0.22 (p1s 0.416) — · ES t +1.12 same
+  post-14:00 new day high        preMove-pdRng                            train t +4.50 · test t +0.71 (p1s 0.246) — · ES t +2.70 same
+  post-14:00 new day high        onRng-preMove                            train t -4.33 · test t -3.18 (p1s 0.004) HELD · ES t -3.73 same
+  post-14:00 new day high        onMove-onRng                             train t +3.92 · test t +2.93 (p1s 0.007) HELD · ES t +3.39 same
+  post-14:00 new day high        max(dayPos,preMove)                      train t +3.08 · test t +1.52 (p1s 0.079) — · ES t +2.42 same
+  post-14:00 new day high        moDisc>0                                 train t +4.54 · test t -0.20 (p1s 0.424) — · ES t +0.44 same
+  post-14:00 new day high        wkPos*preRng                             train t +3.21 · test t +0.80 (p1s 0.220) — · ES t +2.34 same
+  post-14:00 new day high        dWO>-0.245&moDisc>0                      train t +4.51 · test t +4.51 (p1s 0.000) HELD · ES t -0.21 opp
+  post-14:00 new day high        dMO*moDisc                               train t -3.21 · test t -0.13 (p1s 0.449) — · ES t -1.33 same
+  post-14:00 new day high        pdPos*preRng                             train t +4.64 · test t +0.49 (p1s 0.318) — · ES t +6.41 same
+  post-14:00 new day high        belowPDL>0&moPos>0.843                   train t +4.49 · test t -2.69 (p1s 0.010) — · ES t +4.49 same
+  post-14:00 new day high        moPos>0.832&belowPDL>0                   train t +4.51 · test t -2.69 (p1s 0.010) — · ES t +4.51 same
+  post-14:00 new day high        preRng>0.535&moDisc>0                    train t +4.52 · test t -2.69 (p1s 0.010) — · ES t +0.13 same
+  post-14:00 new day high        t5*t20                                   train t +3.65 · test t -1.35 (p1s 0.103) — · ES t +2.02 same
+  post-14:00 new day high        gap>0.154&adrPct>2.35                    train t +4.58 · test t +0.00 (p1s 0.500) — · ES t +4.52 same
+  post-14:00 new day high        vixRel>-0.0409&moDisc>0                  train t +4.52 · test t +0.33 (p1s 0.374) — · ES t +0.13 same
+  post-14:00 new day low         preMove                                  train t -3.63 · test t +0.20 (p1s 0.424) — · ES t -2.55 same
+  post-14:00 new day low         onRng                                    train t -3.26 · test t +1.21 (p1s 0.126) — · ES t -1.44 same
+  post-14:00 new day low         onMove                                   train t -4.02 · test t +0.00 (p1s 0.499) — · ES t -2.13 same
+  post-14:00 new day low         gap                                      train t -4.03 · test t +0.41 (p1s 0.346) — · ES t -3.22 same
+  post-14:00 new day low         abovePDH                                 train t -2.48 · test t +2.25 (p1s 0.023) — · ES t -2.89 same
+  post-14:00 new day low         pdPos>0.933                              train t -2.87 · test t +2.31 (p1s 0.021) — · ES t -2.85 same
+  post-14:00 new day low         max(moPrem,abovePDH)                     train t -2.42 · test t +2.57 (p1s 0.013) — · ES t -3.09 same
+  post-14:00 new day low         gap-moDisc                               train t -4.25 · test t +0.18 (p1s 0.432) — · ES t -5.37 same
+  post-14:00 new day low         max(amRng,onRng)                         train t -2.49 · test t +1.61 (p1s 0.068) — · ES t -1.20 same
+  post-14:00 new day low         preMove>-0.00215                         train t -2.49 · test t +0.52 (p1s 0.308) — · ES t -1.34 same
+  post-14:00 new day low         moPos*dom                                train t +2.91 · test t +0.75 (p1s 0.234) — · ES t +1.96 same
+  post-14:00 new day low         max(dom,moPos)                           train t -3.15 · test t +0.56 (p1s 0.294) — · ES t -2.58 same
+  post-14:00 new day low         onMove>-0.0487                           train t -3.01 · test t +0.10 (p1s 0.461) — · ES t -2.58 same
+  post-14:00 new day low         onRng>0.385                              train t -2.56 · test t +0.17 (p1s 0.434) — · ES t -1.44 same
+  post-14:00 new day low         preMove-pdDir                            train t -2.43 · test t -0.13 (p1s 0.451) — · ES t -1.48 same
+  post-14:00 new day low         belowPDL>0&onMove>0.0645                 train t -6.81 · test t +0.00 (p1s 0.500) — · ES t +0.00 opp
+  post-14:00 new day low         wkPos>0.856                              train t -3.34 · test t +2.25 (p1s 0.023) — · ES t -1.74 same
+  post-14:00 new day low         onMove>-0.064&moPrem>0                   train t -2.45 · test t +2.60 (p1s 0.012) — · ES t -2.68 same
+  post-14:00 new day low         preMove>0.389                            train t -4.11 · test t +2.31 (p1s 0.021) — · ES t -3.42 same
+  post-14:00 new day low         vix-moDisc                               train t -4.50 · test t -0.03 (p1s 0.490) — · ES t -3.57 same
+  post-14:00 new day low         dayPos>0.343&onMove>0.0247               train t -3.91 · test t -0.17 (p1s 0.434) — · ES t -2.79 same
+  post-14:00 new day low         onRng-t20                                train t -2.60 · test t -0.78 (p1s 0.225) — · ES t -0.73 same
+  post-14:00 new day low         pdRng>1.06&pdPos>0.966                   train t -7.17 · test t +0.00 (p1s 0.500) — · ES t -1.87 same
+  post-14:00 new day low         amRng>0.324&onRng>0.431                  train t -2.45 · test t +0.29 (p1s 0.390) — · ES t -1.96 same
+  post-14:00 new day low         max(onMove,pdRng)                        train t -2.90 · test t +0.18 (p1s 0.430) — · ES t -1.36 same
+  post-14:00 new day low         vix*wkPos                                train t -2.58 · test t -0.31 (p1s 0.382) — · ES t -1.53 same
+  post-14:00 new day low         moDisc-vix                               train t +4.50 · test t +0.03 (p1s 0.490) — · ES t +3.57 same
+  post-14:00 new day low         wkPos>0.873                              train t -3.04 · test t +2.25 (p1s 0.023) — · ES t -1.36 same
+  post-14:00 new day low         dWO>0.908&vix>25.6                       train t -6.81 · test t +0.00 (p1s 0.500) — · ES t -0.96 same
+  post-14:00 new day low         athDist-wkPos                            train t +2.48 · test t -0.18 (p1s 0.432) — · ES t +2.91 same
+  post-14:00 new day low         pdPos>0.634&dayPos>0.684                 train t -2.73 · test t +2.25 (p1s 0.023) — · ES t -2.85 same
+  post-14:00 new day low         max(pdPos,gap)                           train t -3.24 · test t +0.80 (p1s 0.221) — · ES t -3.56 same
+  post-14:00 new day low         gapFilled-onMove                         train t +4.84 · test t -0.34 (p1s 0.369) — · ES t +2.76 same
+  post-14:00 new day low         dayPos>0.756                             train t -2.58 · test t +2.31 (p1s 0.021) — · ES t -1.21 same
+  post-14:00 new day low         onMove-gapFilled                         train t -4.84 · test t +0.34 (p1s 0.369) — · ES t -2.76 same
+  post-14:00 new day low         gapFilled-preMove                        train t +3.88 · test t -0.40 (p1s 0.350) — · ES t +2.87 same
+  post-14:00 new day low         athDist*pdRng                            train t +2.98 · test t -0.33 (p1s 0.374) — · ES t +3.31 same
+  post-14:00 new day low         max(dMO,vixRel)                          train t -2.75 · test t +1.33 (p1s 0.106) — · ES t -0.61 same
+  post-14:00 new day low         max(dayPos,preMove)                      train t -2.95 · test t +0.54 (p1s 0.298) — · ES t -2.07 same
+  post-14:00 new day low         preMove>0.526                            train t -3.98 · test t +2.25 (p1s 0.023) — · ES t -1.87 same
+  |stage 1| (ADR)                sep                                      train t +4.83 · test t +0.85 (p1s 0.207) — · ES t +3.97 same
+  |stage 1| (ADR)                moDisc                                   train t +3.41 · test t -0.22 (p1s 0.413) — · ES t +1.93 same
+  |stage 1| (ADR)                sep-lunMove                              train t +3.58 · test t +1.23 (p1s 0.123) — · ES t +3.06 same
+  |stage 1| (ADR)                gapFilled>0&sep>0                        train t +2.99 · test t +1.08 (p1s 0.152) — · ES t +1.98 same
+  |stage 1| (ADR)                gap-moDisc                               train t -3.77 · test t +0.46 (p1s 0.327) — · ES t -2.55 same
+  |stage 1| (ADR)                sep-vixRel                               train t +4.12 · test t +1.11 (p1s 0.146) — · ES t +3.49 same
+  |stage 1| (ADR)                lunMove>-0.102&sep>0                     train t +3.24 · test t +0.56 (p1s 0.293) — · ES t +2.57 same
+  |stage 1| (ADR)                max(moDisc,gapFilled)                    train t +3.67 · test t +0.64 (p1s 0.269) — · ES t +2.39 same
+  |stage 1| (ADR)                moPos-sep                                train t -4.25 · test t -0.93 (p1s 0.186) — · ES t -3.59 same
+  |stage 1| (ADR)                athDist*pdRng                            train t +5.58 · test t -1.34 (p1s 0.104) — · ES t +1.37 same
+  |stage 1| (ADR)                moDisc-wkPos                             train t +3.09 · test t +0.48 (p1s 0.321) — · ES t +2.70 same
+  |stage 1| (ADR)                max(belowPDL,sep)                        train t +3.17 · test t +0.45 (p1s 0.329) — · ES t +3.34 same
+  |stage 1| (ADR)                moDisc>0                                 train t +3.41 · test t -0.22 (p1s 0.413) — · ES t +1.93 same
+  |stage 1| (ADR)                t20>1.33&preRng>0.778                    train t -4.73 · test t +0.00 (p1s 0.500) — · ES t -0.63 same
+  |stage 1| (ADR)                dWO>-0.245&moDisc>0                      train t +5.00 · test t +1.30 (p1s 0.110) — · ES t +1.24 same
+  |stage 1| (ADR)                max(moPos,moDisc)                        train t +3.09 · test t -0.50 (p1s 0.313) — · ES t +1.00 same
+  |stage 1| (ADR)                belowPDL>0&moPos>0.843                   train t -4.21 · test t -1.74 (p1s 0.055) — · ES t -3.95 same
+  |stage 1| (ADR)                onRng*dWO                                train t -3.05 · test t +1.26 (p1s 0.117) — · ES t -3.26 same
+  |stage 1| (ADR)                moPos>0.832&belowPDL>0                   train t -4.05 · test t -1.74 (p1s 0.055) — · ES t -2.57 same
+  |stage 1| (ADR)                sep>0                                    train t +4.83 · test t +0.85 (p1s 0.207) — · ES t +3.97 same
+  |stage 1| (ADR)                max(sep,moDisc)                          train t +5.36 · test t +0.21 (p1s 0.420) — · ES t +3.81 same
+  |stage 1| (ADR)                max(sep,gapFilled)                       train t +4.01 · test t +3.24 (p1s 0.004) HELD · ES t +3.23 same
+  |stage 1| (ADR)                vixRel*amMove                            train t +2.98 · test t +0.51 (p1s 0.311) — · ES t +1.79 same
+  |stage 1| (ADR)                moPos*belowPDL                           train t -3.58 · test t -0.62 (p1s 0.273) — · ES t +0.82 opp
+  |stage 1| (ADR)                moPrem*vix                               train t -3.13 · test t +0.40 (p1s 0.349) — · ES t -2.41 same
+  |stage 2| (ADR)                dWO>0.908&vix>25.6                       train t -3.98 · test t +0.00 (p1s 0.500) — · ES t -2.51 same
+  |stage 2| (ADR)                vix>21.8&dWO>1.05                        train t -4.76 · test t +0.00 (p1s 0.500) — · ES t -7.51 same
+  |stage 2| (ADR)                pdPos*preRng                             train t -5.53 · test t -1.42 (p1s 0.092) — · ES t -2.98 same
+  |stage 2| (ADR)                gap>0.126&wkPos>0.912                    train t -4.80 · test t +0.00 (p1s 0.500) — · ES t -5.77 same
+  post-14:00 range (ADR)         dWO                                      train t -3.38 · test t -0.20 (p1s 0.424) — · ES t -4.19 same
+  post-14:00 range (ADR)         amRng>0.468&lunMove>0.143                train t +3.22 · test t +6.29 (p1s 0.000) HELD · ES t +1.80 same
+  post-14:00 range (ADR)         gap-moDisc                               train t -3.44 · test t -0.01 (p1s 0.494) — · ES t -1.62 same
+  post-14:00 range (ADR)         vixRel-wkPos                             train t +3.33 · test t +1.20 (p1s 0.127) — · ES t +2.94 same
+  post-14:00 range (ADR)         dWO>0.908&vix>25.6                       train t -4.62 · test t +0.00 (p1s 0.500) — · ES t -4.24 same
+  post-14:00 range (ADR)         athDist-wkPos                            train t +4.21 · test t +0.04 (p1s 0.486) — · ES t +3.47 same
+  post-14:00 range (ADR)         moDisc-wkPos                             train t +3.36 · test t +0.11 (p1s 0.459) — · ES t +1.80 same
+  post-14:00 range (ADR)         athDist>7.87                             train t +2.95 · test t +0.00 (p1s 0.500) — · ES t +1.54 same
+  post-14:00 range (ADR)         dWO>-0.245&moDisc>0                      train t +4.43 · test t -1.02 (p1s 0.164) — · ES t +0.60 same
+  post-14:00 range (ADR)         moDisc-pdRng                             train t +3.01 · test t -0.05 (p1s 0.479) — · ES t +0.86 same
+  post-14:00 range (ADR)         pdPos*preRng                             train t -6.83 · test t -1.42 (p1s 0.091) — · ES t -3.56 same
+  post-14:00 range (ADR)         belowPDL>0&moPos>0.843                   train t -3.85 · test t +1.86 (p1s 0.045) — · ES t -4.39 same
+  post-14:00 range (ADR)         moPos>0.832&belowPDL>0                   train t -3.79 · test t +1.86 (p1s 0.045) — · ES t -4.62 same
+  post-14:00 range (ADR)         onMove>0.106&t20>2.13                    train t -3.74 · test t +0.50 (p1s 0.315) — · ES t -3.67 same
+  post-14:00 range (ADR)         pdPos-athDist                            train t -4.85 · test t -0.26 (p1s 0.401) — · ES t -3.18 same
+  post-14:00 range (ADR)         dWO-athDist                              train t -4.22 · test t -0.33 (p1s 0.375) — · ES t -5.18 same
+  post-14:00 range (ADR)         gap>0.126&wkPos>0.912                    train t -5.80 · test t +0.00 (p1s 0.500) — · ES t -6.90 same
+  post-14:00 range (ADR)         max(wkPos,dWO)                           train t -3.55 · test t -0.54 (p1s 0.302) — · ES t -3.18 same
+  post-14:00 range (ADR)         dWO-vixRel                               train t -3.70 · test t -1.60 (p1s 0.069) — · ES t -3.42 same
+  post-14:00 range (ADR)         athDist-gap                              train t +3.62 · test t -0.38 (p1s 0.354) — · ES t +2.71 same
+
+  held in the locked test and same side on ES: 12
+
+D. WHOLE NET (ridge logistic on the 29 base features, fit 2018–24): AUC on 2025–26 vs 200 shuffled-label nulls
+  stage 1 up                       AUC 0.278 · null 95th pct 0.833
+  stage 2 up                       AUC 0.381 · null 95th pct 0.762
+  14:00→16:14 up                   AUC 0.524 · null 95th pct 0.739
+  stage 2 continues stage 1        AUC 0.694 · null 95th pct 0.779
+  next NY AM up                    AUC 0.405 · null 95th pct 0.738
+  post-14:00 extends further up    AUC 0.300 · null 95th pct 0.725
+  post-14:00 new day high          AUC 0.675 · null 95th pct 0.775
+  post-14:00 new day low           AUC 0.278 · null 95th pct 0.778

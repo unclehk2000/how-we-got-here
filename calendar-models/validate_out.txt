@@ -1,0 +1,132 @@
+==============================================================================================================
+NQ: days by anchor {'MID': 2043, 'RTH': 2057, 'TD': 2058} | train 2018–24, test 2025–26
+
+NQ · TD: median range ÷ ADR20 (train → test) · up-close % (train → test) · MW p vs normal (train)
+   FOMC    n   55/ 13 · R 1.14 → 0.95 · up   56% →   54% · p 0.0000
+   NFP     n   81/ 17 · R 1.02 → 1.22 · up   53% →   35% · p 0.0026
+   CPI     n   79/ 17 · R 1.07 → 0.92 · up   54% →   65% · p 0.0006
+   POST    n   54/ 13 · R 1.26 → 0.99 · up   52% →   69% · p 0.0000
+   PRE     n   51/ 13 · R 0.88 → 0.77 · up   57% →   31% · p 0.3686
+   HOLLOW  n  260/ 63 · R 0.90 → 0.97 · up   56% →   57% · p 0.1351
+   NORMAL  n 1091/251 · R 0.88 → 0.89 · up   56% →   52% · p nan
+   projection of the high/low reach on 2025–26 (MAE in ADR units; type-specific vs one-size-fits-all):
+      FOMC    n  13 · u 0.277 vs 0.161 · v 0.266 vs 0.263 · R 0.331 vs 0.276 · P25–75 cover u 92% v 54% R 46%
+      NFP     n  17 · u 0.328 vs 0.320 · v 0.813 vs 0.822 · R 0.648 vs 0.703 · P25–75 cover u 71% v 18% R 47%
+      CPI     n  17 · u 0.291 vs 0.324 · v 0.386 vs 0.370 · R 0.305 vs 0.289 · P25–75 cover u 47% v 41% R 47%
+      POST    n  13 · u 0.407 vs 0.457 · v 0.427 vs 0.358 · R 0.422 vs 0.390 · P25–75 cover u 54% v 23% R 46%
+      PRE     n  13 · u 0.259 vs 0.268 · v 0.253 vs 0.254 · R 0.210 vs 0.215 · P25–75 cover u 46% v 38% R 54%
+      HOLLOW  n  63 · u 0.282 vs 0.283 · v 0.315 vs 0.316 · R 0.326 vs 0.326 · P25–75 cover u 46% v 51% R 57%
+      NORMAL  n 251 · u 0.313 vs 0.314 · v 0.348 vs 0.348 · R 0.353 vs 0.352 · P25–75 cover u 44% v 43% R 49%
+      time of high FOMC  : χ² p 0.0011 · most over-represented 12–17: train 73% vs normal 42% · test 38% vs 39% (n 13)
+      time of high NFP   : χ² p 0.0413 · most over-represented 07–09:30: train 14% vs normal 6% · test 12% vs 10% (n 17)
+      time of high CPI   : χ² p 0.0110 · most over-represented 07–09:30: train 16% vs normal 6% · test 24% vs 10% (n 17)
+      time of low FOMC  : χ² p 0.0019 · most over-represented 12–17: train 56% vs normal 33% · test 77% vs 28% (n 13)
+      time of low NFP   : χ² p 0.0004 · most over-represented 07–09:30: train 21% vs normal 7% · test 0% vs 5% (n 17)
+
+NQ · MID: median range ÷ ADR20 (train → test) · up-close % (train → test) · MW p vs normal (train)
+   FOMC    n   54/ 13 · R 1.18 → 1.00 · up   54% →   23% · p 0.0000
+   NFP     n   81/ 17 · R 1.03 → 1.33 · up   52% →   41% · p 0.0015
+   CPI     n   79/ 18 · R 1.07 → 0.93 · up   59% →   67% · p 0.0003
+   POST    n   53/ 13 · R 1.17 → 0.95 · up   51% →   54% · p 0.0000
+   PRE     n   51/ 13 · R 0.89 → 0.83 · up   55% →   23% · p 0.2909
+   HOLLOW  n  260/ 64 · R 0.88 → 0.99 · up   57% →   55% · p 0.1744
+   NORMAL  n 1077/250 · R 0.87 → 0.86 · up   56% →   54% · p nan
+   projection of the high/low reach on 2025–26 (MAE in ADR units; type-specific vs one-size-fits-all):
+      FOMC    n  13 · u 0.314 vs 0.222 · v 0.263 vs 0.290 · R 0.348 vs 0.304 · P25–75 cover u 62% v 62% R 38%
+      NFP     n  17 · u 0.298 vs 0.265 · v 0.871 vs 0.871 · R 0.668 vs 0.715 · P25–75 cover u 59% v 24% R 29%
+      CPI     n  18 · u 0.302 vs 0.329 · v 0.373 vs 0.341 · R 0.311 vs 0.283 · P25–75 cover u 50% v 39% R 50%
+      POST    n  13 · u 0.367 vs 0.362 · v 0.392 vs 0.374 · R 0.417 vs 0.358 · P25–75 cover u 62% v 54% R 38%
+      PRE     n  13 · u 0.289 vs 0.265 · v 0.223 vs 0.230 · R 0.214 vs 0.221 · P25–75 cover u 62% v 62% R 54%
+      HOLLOW  n  64 · u 0.313 vs 0.312 · v 0.336 vs 0.336 · R 0.325 vs 0.317 · P25–75 cover u 42% v 52% R 61%
+      NORMAL  n 250 · u 0.295 vs 0.295 · v 0.332 vs 0.331 · R 0.352 vs 0.354 · P25–75 cover u 53% v 51% R 52%
+      time of high FOMC  : χ² p 0.0003 · most over-represented 12–17: train 76% vs normal 44% · test 54% vs 43% (n 13)
+      time of high CPI   : χ² p 0.0049 · most over-represented 07–09:30: train 18% vs normal 7% · test 22% vs 13% (n 18)
+      time of high POST  : χ² p 0.0322 · most over-represented 00–02: train 21% vs normal 8% · test 8% vs 8% (n 13)
+      time of low FOMC  : χ² p 0.0088 · most over-represented 12–17: train 57% vs normal 35% · test 85% vs 30% (n 13)
+      time of low NFP   : χ² p 0.0000 · most over-represented 07–09:30: train 28% vs normal 8% · test 0% vs 7% (n 17)
+      time of low CPI   : χ² p 0.0103 · most over-represented 07–09:30: train 19% vs normal 8% · test 11% vs 7% (n 18)
+
+NQ · RTH: median range ÷ ADR20 (train → test) · up-close % (train → test) · MW p vs normal (train)
+   FOMC    n   55/ 13 · R 1.20 → 0.98 · up   53% →   31% · p 0.0000
+   NFP     n   81/ 17 · R 0.94 → 1.40 · up   57% →   35% · p 0.0603
+   CPI     n   79/ 19 · R 1.00 → 0.90 · up   59% →   37% · p 0.0496
+   POST    n   54/ 13 · R 1.18 → 0.97 · up   44% →   69% · p 0.0005
+   PRE     n   51/ 13 · R 0.85 → 0.68 · up   57% →   46% · p 0.9583
+   HOLLOW  n  260/ 64 · R 0.91 → 1.03 · up   56% →   67% · p 0.1739
+   NORMAL  n 1087/251 · R 0.89 → 0.87 · up   55% →   54% · p nan
+   projection of the high/low reach on 2025–26 (MAE in ADR units; type-specific vs one-size-fits-all):
+      FOMC    n  13 · u 0.295 vs 0.230 · v 0.391 vs 0.417 · R 0.388 vs 0.345 · P25–75 cover u 46% v 54% R 23%
+      NFP     n  17 · u 0.291 vs 0.238 · v 0.791 vs 0.778 · R 0.687 vs 0.692 · P25–75 cover u 71% v 35% R 18%
+      CPI     n  19 · u 0.284 vs 0.259 · v 0.290 vs 0.291 · R 0.335 vs 0.315 · P25–75 cover u 42% v 68% R 47%
+      POST    n  13 · u 0.247 vs 0.237 · v 0.328 vs 0.319 · R 0.338 vs 0.267 · P25–75 cover u 85% v 77% R 62%
+      PRE     n  13 · u 0.198 vs 0.223 · v 0.258 vs 0.265 · R 0.286 vs 0.310 · P25–75 cover u 62% v 31% R 31%
+      HOLLOW  n  64 · u 0.376 vs 0.366 · v 0.302 vs 0.302 · R 0.334 vs 0.332 · P25–75 cover u 47% v 50% R 52%
+      NORMAL  n 251 · u 0.310 vs 0.310 · v 0.367 vs 0.367 · R 0.354 vs 0.357 · P25–75 cover u 47% v 47% R 47%
+      time of high FOMC  : χ² p 0.0000 · most over-represented 13:30–16:15: train 78% vs normal 41% · test 62% vs 35% (n 13)
+      time of low FOMC  : χ² p 0.0041 · most over-represented 13:30–16:15: train 55% vs normal 32% · test 77% vs 25% (n 13)
+==============================================================================================================
+ES: days by anchor {'MID': 2125, 'RTH': 2128, 'TD': 2135} | train 2018–24, test 2025–26
+
+ES · TD: median range ÷ ADR20 (train → test) · up-close % (train → test) · MW p vs normal (train)
+   FOMC    n   55/ 13 · R 1.18 → 0.99 · up   55% →   46% · p 0.0000
+   NFP     n   81/ 17 · R 1.02 → 1.11 · up   54% →   35% · p 0.0002
+   CPI     n   79/ 19 · R 1.01 → 0.98 · up   56% →   53% · p 0.0029
+   POST    n   54/ 13 · R 1.21 → 1.19 · up   56% →   62% · p 0.0000
+   PRE     n   51/ 13 · R 1.00 → 0.72 · up   49% →   38% · p 0.2801
+   HOLLOW  n  261/ 63 · R 0.88 → 0.96 · up   56% →   59% · p 0.1234
+   NORMAL  n 1148/268 · R 0.85 → 0.87 · up   54% →   58% · p nan
+   projection of the high/low reach on 2025–26 (MAE in ADR units; type-specific vs one-size-fits-all):
+      FOMC    n  13 · u 0.173 vs 0.165 · v 0.409 vs 0.403 · R 0.380 vs 0.350 · P25–75 cover u 62% v 38% R 54%
+      NFP     n  17 · u 0.267 vs 0.254 · v 0.788 vs 0.807 · R 0.624 vs 0.682 · P25–75 cover u 59% v 29% R 47%
+      CPI     n  19 · u 0.305 vs 0.307 · v 0.353 vs 0.342 · R 0.295 vs 0.298 · P25–75 cover u 47% v 47% R 63%
+      POST    n  13 · u 0.347 vs 0.424 · v 0.454 vs 0.423 · R 0.430 vs 0.457 · P25–75 cover u 62% v 31% R 38%
+      PRE     n  13 · u 0.187 vs 0.188 · v 0.177 vs 0.175 · R 0.320 vs 0.225 · P25–75 cover u 54% v 54% R 62%
+      HOLLOW  n  63 · u 0.293 vs 0.293 · v 0.353 vs 0.353 · R 0.352 vs 0.350 · P25–75 cover u 48% v 51% R 56%
+      NORMAL  n 268 · u 0.305 vs 0.305 · v 0.341 vs 0.342 · R 0.375 vs 0.376 · P25–75 cover u 48% v 46% R 53%
+      time of high FOMC  : χ² p 0.0016 · most over-represented 12–17: train 73% vs normal 43% · test 38% vs 44% (n 13)
+      time of high CPI   : χ² p 0.0049 · most over-represented 07–09:30: train 19% vs normal 7% · test 37% vs 9% (n 19)
+      time of high POST  : χ² p 0.0087 · most over-represented 00–02: train 7% vs normal 1% · test 0% vs 1% (n 13)
+      time of low FOMC  : χ² p 0.0009 · most over-represented 12–17: train 64% vs normal 35% · test 77% vs 32% (n 13)
+      time of low NFP   : χ² p 0.0000 · most over-represented 07–09:30: train 22% vs normal 6% · test 0% vs 4% (n 17)
+      time of low CPI   : χ² p 0.0002 · most over-represented 07–09:30: train 20% vs normal 6% · test 11% vs 4% (n 19)
+
+ES · MID: median range ÷ ADR20 (train → test) · up-close % (train → test) · MW p vs normal (train)
+   FOMC    n   55/ 13 · R 1.20 → 1.05 · up   49% →   23% · p 0.0000
+   NFP     n   81/ 17 · R 1.06 → 1.07 · up   56% →   35% · p 0.0001
+   CPI     n   79/ 19 · R 1.06 → 0.96 · up   53% →   47% · p 0.0005
+   POST    n   54/ 13 · R 1.23 → 1.11 · up   57% →   54% · p 0.0000
+   PRE     n   51/ 13 · R 1.00 → 0.66 · up   51% →   38% · p 0.1654
+   HOLLOW  n  261/ 63 · R 0.89 → 1.03 · up   54% →   56% · p 0.2182
+   NORMAL  n 1139/267 · R 0.84 → 0.87 · up   54% →   55% · p nan
+   projection of the high/low reach on 2025–26 (MAE in ADR units; type-specific vs one-size-fits-all):
+      FOMC    n  13 · u 0.247 vs 0.213 · v 0.455 vs 0.489 · R 0.401 vs 0.385 · P25–75 cover u 46% v 62% R 38%
+      NFP     n  17 · u 0.277 vs 0.182 · v 0.889 vs 0.892 · R 0.675 vs 0.718 · P25–75 cover u 82% v 29% R 41%
+      CPI     n  19 · u 0.312 vs 0.330 · v 0.372 vs 0.361 · R 0.306 vs 0.314 · P25–75 cover u 37% v 42% R 63%
+      POST    n  13 · u 0.406 vs 0.383 · v 0.464 vs 0.445 · R 0.469 vs 0.468 · P25–75 cover u 46% v 54% R 31%
+      PRE     n  13 · u 0.240 vs 0.236 · v 0.187 vs 0.175 · R 0.311 vs 0.243 · P25–75 cover u 54% v 69% R 46%
+      HOLLOW  n  63 · u 0.310 vs 0.308 · v 0.339 vs 0.339 · R 0.348 vs 0.348 · P25–75 cover u 48% v 52% R 60%
+      NORMAL  n 267 · u 0.303 vs 0.303 · v 0.330 vs 0.330 · R 0.374 vs 0.373 · P25–75 cover u 48% v 49% R 54%
+      time of high FOMC  : χ² p 0.0039 · most over-represented 12–17: train 73% vs normal 46% · test 46% vs 46% (n 13)
+      time of high CPI   : χ² p 0.0004 · most over-represented 07–09:30: train 22% vs normal 8% · test 37% vs 11% (n 19)
+      time of low FOMC  : χ² p 0.0005 · most over-represented 12–17: train 67% vs normal 37% · test 85% vs 33% (n 13)
+      time of low NFP   : χ² p 0.0000 · most over-represented 07–09:30: train 28% vs normal 8% · test 0% vs 6% (n 17)
+      time of low CPI   : χ² p 0.0003 · most over-represented 07–09:30: train 23% vs normal 8% · test 16% vs 6% (n 19)
+
+ES · RTH: median range ÷ ADR20 (train → test) · up-close % (train → test) · MW p vs normal (train)
+   FOMC    n   55/ 13 · R 1.29 → 1.00 · up   47% →   31% · p 0.0000
+   NFP     n   81/ 17 · R 1.02 → 1.17 · up   63% →   35% · p 0.0232
+   CPI     n   79/ 19 · R 0.94 → 0.96 · up   57% →   47% · p 0.0588
+   POST    n   54/ 13 · R 1.27 → 0.98 · up   44% →   62% · p 0.0001
+   PRE     n   51/ 13 · R 0.87 → 0.61 · up   51% →   38% · p 0.9373
+   HOLLOW  n  261/ 63 · R 0.86 → 0.98 · up   57% →   60% · p 0.5453
+   NORMAL  n 1142/267 · R 0.84 → 0.84 · up   54% →   55% · p nan
+   projection of the high/low reach on 2025–26 (MAE in ADR units; type-specific vs one-size-fits-all):
+      FOMC    n  13 · u 0.289 vs 0.202 · v 0.479 vs 0.531 · R 0.428 vs 0.395 · P25–75 cover u 46% v 46% R 62%
+      NFP     n  17 · u 0.304 vs 0.202 · v 0.869 vs 0.826 · R 0.683 vs 0.725 · P25–75 cover u 41% v 41% R 41%
+      CPI     n  19 · u 0.257 vs 0.256 · v 0.355 vs 0.357 · R 0.322 vs 0.326 · P25–75 cover u 47% v 53% R 53%
+      POST    n  13 · u 0.280 vs 0.280 · v 0.414 vs 0.414 · R 0.432 vs 0.402 · P25–75 cover u 69% v 77% R 62%
+      PRE     n  13 · u 0.212 vs 0.211 · v 0.200 vs 0.207 · R 0.299 vs 0.302 · P25–75 cover u 54% v 69% R 31%
+      HOLLOW  n  63 · u 0.363 vs 0.361 · v 0.315 vs 0.313 · R 0.369 vs 0.365 · P25–75 cover u 48% v 43% R 48%
+      NORMAL  n 267 · u 0.302 vs 0.302 · v 0.362 vs 0.362 · R 0.379 vs 0.379 · P25–75 cover u 52% v 48% R 50%
+      time of high FOMC  : χ² p 0.0001 · most over-represented 13:30–16:15: train 76% vs normal 45% · test 54% vs 37% (n 13)
+      time of low FOMC  : χ² p 0.0000 · most over-represented 13:30–16:15: train 67% vs normal 34% · test 85% vs 27% (n 13)

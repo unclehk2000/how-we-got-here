@@ -1,0 +1,73 @@
+HYDRA · day after FOMC (snapshot 09:29) · NQ train 2018–24 n=53 · locked 2025–26 n=12 · 413 heads (28 base) × 15 targets
+
+B. FISHING (2018–24): BH 10% survivors vs circularly shifted targets (20 shifts)
+  NY AM up                           survivors   0 | shifted null mean 1.7 max 7 | best raw p 0.0034 (fS1*athDist)
+  RTH up                             survivors   2 | shifted null mean 2.0 max 13 | best raw p 0.0000 (fClosePos*athDist)
+  RTH goes the FOMC 14:00→16:14 way  survivors   3 | shifted null mean 0.8 max 4 | best raw p 0.0000 (fS2-athDist)
+  NY AM goes the stage-2 way         survivors   1 | shifted null mean 4.0 max 55 | best raw p 0.0000 (gap*dom)
+  reaches further up than down       survivors  15 | shifted null mean 0.9 max 8 | best raw p 0.0000 (dMO*athDist)
+  new day high after 09:30           survivors  54 | shifted null mean 2.9 max 50 | best raw p 0.0000 (dMO*athDist)
+  new day low after 09:30            survivors   0 | shifted null mean 1.0 max 9 | best raw p 0.0003 (max(t20,gap))
+  RTH takes FOMC day high            survivors 186 | shifted null mean 0.9 max 6 | best raw p 0.0000 (fClosePos-adrPct)
+  RTH takes FOMC day low             survivors 179 | shifted null mean 0.5 max 4 | best raw p 0.0000 (belowPDL-moPrem)
+  RTH gap filled by 16:14            survivors  27 | shifted null mean 1.1 max 13 | best raw p 0.0000 (gapAbs-gap)
+  gap 50% in NY AM                   survivors  11 | shifted null mean 0.8 max 9 | best raw p 0.0002 (onMove>0.423)
+  open-side ¼ held NY AM             survivors   0 | shifted null mean 1.9 max 11 | best raw p 0.0155 (max(fSep,vix))
+  |NY AM| (ADR)                      survivors   0 | shifted null mean 0.2 max 3 | best raw p 0.0008 (dWO*moPos)
+  RTH range (ADR)                    survivors   1 | shifted null mean 0.5 max 2 | best raw p 0.0001 (athDist*dWO)
+  next day's range (ADR)             survivors  25 | shifted null mean 0.1 max 1 | best raw p 0.0007 (max(fClosePos,adrPct))
+
+C. LOCKED TEST 2025–26 (same sign, one-sided p < 0.05) and ES replication (same sign on ES 2018–24)
+  new day high after 09:30         dMO*athDist                              train t +7.50 · test t +2.10 (p1s 0.031) HELD · ES t +3.71 same
+  new day high after 09:30         gap*dMO                                  train t -5.41 · test t -2.93 (p1s 0.008) HELD · ES t -2.99 same
+  new day high after 09:30         pdPos*dMO                                train t -4.21 · test t -1.88 (p1s 0.044) HELD · ES t -2.25 same
+  new day high after 09:30         vixRel-belowPDL                          train t +3.89 · test t +3.67 (p1s 0.002) HELD · ES t +4.42 same
+  new day high after 09:30         onMove                                   train t +3.62 · test t +2.00 (p1s 0.037) HELD · ES t +3.28 same
+  new day high after 09:30         max(belowPDL,dMO)                        train t -3.23 · test t -2.97 (p1s 0.007) HELD · ES t -2.62 same
+  new day high after 09:30         belowPDL*adrPct                          train t -3.10 · test t -2.15 (p1s 0.029) HELD · ES t +0.66 opp
+  new day high after 09:30         max(belowPDL,moPos)                      train t -2.95 · test t -3.56 (p1s 0.003) HELD · ES t -2.59 same
+  RTH takes FOMC day high          pdPos-athDist                            train t +10.77 · test t +6.12 (p1s 0.000) HELD · ES t +9.26 same
+  RTH takes FOMC day high          max(wkPos,pdPos)                         train t +9.92 · test t +3.99 (p1s 0.001) HELD · ES t +7.45 same
+  RTH takes FOMC day high          wkPos                                    train t +9.50 · test t +4.05 (p1s 0.001) HELD · ES t +6.87 same
+  RTH takes FOMC day high          wkPos>0.809                              train t +7.48 · test t +2.47 (p1s 0.016) HELD · ES t +8.92 same
+  RTH takes FOMC day high          pdPos                                    train t +7.46 · test t +5.80 (p1s 0.000) HELD · ES t +6.62 same
+  RTH takes FOMC day high          belowPDL-abovePDH                        train t -7.37 · test t -4.44 (p1s 0.001) HELD · ES t -8.78 same
+  RTH takes FOMC day high          abovePDH-belowPDL                        train t +7.37 · test t +4.44 (p1s 0.001) HELD · ES t +8.78 same
+  RTH takes FOMC day high          pdPos>0.951                              train t +6.92 · test t +2.89 (p1s 0.008) HELD · ES t +10.01 same
+  RTH takes FOMC day high          abovePDH-adrPct                          train t +6.85 · test t +2.55 (p1s 0.015) HELD · ES t +7.02 same
+  RTH takes FOMC day high          abovePDH                                 train t +6.82 · test t +2.89 (p1s 0.008) HELD · ES t +9.45 same
+  RTH takes FOMC day high          abovePDH>0                               train t +6.82 · test t +2.89 (p1s 0.008) HELD · ES t +9.45 same
+  RTH takes FOMC day high          abovePDH>0&dWO>0.00807                   train t +6.82 · test t +2.62 (p1s 0.013) HELD · ES t +9.45 same
+  RTH takes FOMC day high          max(pdPos,moPos)                         train t +6.79 · test t +6.16 (p1s 0.000) HELD · ES t +6.18 same
+  RTH takes FOMC day high          wkPos>0.75                               train t +6.75 · test t +2.89 (p1s 0.008) HELD · ES t +5.52 same
+  RTH takes FOMC day high          max(pdPos,fPost)                         train t +6.72 · test t +4.92 (p1s 0.000) HELD · ES t +8.05 same
+  RTH takes FOMC day high          max(moPos,abovePDH)                      train t +6.70 · test t +2.16 (p1s 0.028) HELD · ES t +7.60 same
+  RTH takes FOMC day high          max(pdPos,moPrem)                        train t +6.57 · test t +4.69 (p1s 0.000) HELD · ES t +5.98 same
+  RTH takes FOMC day low           belowPDL-pdPos                           train t +10.11 · test t +2.07 (p1s 0.033) HELD · ES t +7.49 same
+  RTH takes FOMC day low           max(t5,gap)                              train t -6.77 · test t -2.31 (p1s 0.022) HELD · ES t -8.34 same
+  RTH gap filled by 16:14          gapAbs                                   train t -4.18 · test t -2.27 (p1s 0.023) HELD · ES t -4.26 same
+  RTH gap filled by 16:14          gapAbs-fRng                              train t -3.45 · test t -4.07 (p1s 0.001) HELD · ES t -2.22 same
+  RTH gap filled by 16:14          onRng-vixRel                             train t -3.40 · test t -5.52 (p1s 0.000) HELD · ES t -0.85 same
+  RTH gap filled by 16:14          max(onMove,gapAbs)                       train t -3.20 · test t -1.86 (p1s 0.046) HELD · ES t -2.83 same
+  RTH gap filled by 16:14          gapAbs>0.653                             train t -3.14 · test t -3.20 (p1s 0.005) HELD · ES t -1.51 same
+  RTH gap filled by 16:14          max(moPos,gapAbs)                        train t -3.11 · test t -2.31 (p1s 0.022) HELD · ES t -4.21 same
+  gap 50% in NY AM                 onMove>0.423                             train t -3.95 · test t -2.42 (p1s 0.018) HELD · ES t -0.84 same
+  gap 50% in NY AM                 max(onMove,gapAbs)                       train t -3.93 · test t -2.17 (p1s 0.028) HELD · ES t -1.59 same
+  gap 50% in NY AM                 gapAbs                                   train t -3.73 · test t -2.90 (p1s 0.008) HELD · ES t -2.44 same
+  gap 50% in NY AM                 max(moPos,gapAbs)                        train t -3.64 · test t -2.74 (p1s 0.010) HELD · ES t -2.22 same
+
+  survivors taken to the test: 205 · held in the locked test and same side on ES: 36
+
+D. WHOLE NET (ridge logistic on the base features, fit 2018–24): AUC on 2025–26 vs 200 shuffled-label nulls
+  NY AM up                           AUC 0.629 · null 95th pct 0.800
+  RTH up                             AUC 0.469 · null 95th pct 0.783
+  RTH goes the FOMC 14:00→16:14 way  AUC 0.594 · null 95th pct 0.781
+  NY AM goes the stage-2 way         AUC 0.286 · null 95th pct 0.800
+  reaches further up than down       AUC 0.250 · null 95th pct 0.812
+  new day high after 09:30           AUC 0.771 · null 95th pct 0.771
+  new day low after 09:30            AUC 0.486 · null 95th pct 0.773
+  RTH takes FOMC day high            AUC 0.875 · null 95th pct 0.752  ← beats the null
+  RTH takes FOMC day low             AUC 0.375 · null 95th pct 0.783
+  RTH gap filled by 16:14            AUC 0.657 · null 95th pct 0.771
+  gap 50% in NY AM                   AUC 0.886 · null 95th pct 0.771  ← beats the null
+  open-side ¼ held NY AM             AUC 0.963 · null 95th pct 0.815  ← beats the null
